@@ -23,6 +23,8 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment.
 
 - `mkdir output`
 
+You can now download
+
 ### Create Virtual Environment
 
 - `python -m venv venv –upgrade-deps`
@@ -31,11 +33,11 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment.
 
 #### For MacOS and Linux:
 
-##### `source venv/bin/activate`
+ `source venv/bin/activate`
 
 #### For Windows:
 
-##### `venv\Scripts\activate.bat`
+`venv\Scripts\activate.bat`
 
 If you would like to deactivate your virtual environment at any time, use the command `deactivate`
 
@@ -43,15 +45,15 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities.
 
-##### `pip install healdata-utils`
+`pip install healdata-utils`
 
 Next, to confirm that the HEAL Data Utilities package was installed correctly:
 
-##### `which vlmd`
+`which vlmd`
 
 The installation path should look like something like this:
 
-##### `/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
+`/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
 
 ## Generate a HEAL Data Dictionary
 
@@ -59,7 +61,7 @@ Now that the HEAL Data Utilities python package has been successfully installed,
 
 To confirm installation and to see the different options:
 
-##### `vlmd --help`
+`vlmd --help`
 
 ![](../imgs/healtdata-utils_options.png/)
 
@@ -69,15 +71,15 @@ Here is how you would generate a HEAL Data Dictionary with a data dictionary dow
 
 #### For MacOS and Linux:
 
-##### `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
 #### For Windows:
 
-##### `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
 ---
 
-## Summary of Command Line
+## Summary of Command Line Prompts
 
 1. `mkdir my_project`
 2. `cd my_project`
