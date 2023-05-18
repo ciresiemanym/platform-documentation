@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://heal-docs-dev.io/hosted_data_types/">
+        <link rel="canonical" href="https://heal-docs-dev.io/vlmd-healdata-utils/">
       
       <link rel="icon" href="../img/heal_logo.png">
       <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
     
     
       
-        <title>Types of Hosted Data - HEAL Platform Documentation</title>
+        <title>healdata-utils temp - HEAL Platform Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#types-of-hosted-data" class="md-skip">
+        <a href="#how-to-generate-heal-compliant-data-dictionaries" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Types of Hosted Data
+              healdata-utils temp
             
           </span>
         </div>
@@ -321,11 +321,75 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../vlmd-healdata-utils/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          healdata-utils temp
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         healdata-utils temp
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-generate-heal-compliant-data-dictionaries" class="md-nav__link">
+    How to Generate HEAL-compliant Data Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Generate HEAL-compliant Data Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-set-up" class="md-nav__link">
+    Virtual Environment Set Up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-the-heal-data-utilities" class="md-nav__link">
+    Install the HEAL Data Utilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-heal-data-dictionary" class="md-nav__link">
+    Generate a HEAL Data Dictionary
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -366,14 +430,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
       
       
       
@@ -400,21 +462,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../hosted_data_types/" class="md-nav__link">
         Types of Hosted Data
       </a>
-      
     </li>
   
 
@@ -633,8 +685,48 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-generate-heal-compliant-data-dictionaries" class="md-nav__link">
+    How to Generate HEAL-compliant Data Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Generate HEAL-compliant Data Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#virtual-environment-set-up" class="md-nav__link">
+    Virtual Environment Set Up
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-the-heal-data-utilities" class="md-nav__link">
+    Install the HEAL Data Utilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-a-heal-data-dictionary" class="md-nav__link">
+    Generate a HEAL Data Dictionary
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -649,30 +741,59 @@
                   
 
 
-<h1 id="types-of-hosted-data">Types of Hosted Data<a class="headerlink" href="#types-of-hosted-data" title="Permanent link">&para;</a></h1>
-<p>As part of the NIH HEAL Initiative, the HEAL Platform aims to transform opioid research into a virtual, annotated, searchable catalog where data from different studies can be analyzed, compared, and combined.</p>
-<p>The data presented on the HEAL Platform are diverse and include scientific research across multiple disciplines. For example, researchers can use this single platform to find clinical patient care data and public records as well as “-omics” data files with associated sample collection and processing data.</p>
-<p>The HEAL platform aims to make data more accessible by following the "<strong>FAIR</strong>" principles:</p>
-<p><strong>F</strong>indable</p>
-<ul>
-<li>Researchers are provided an intuitive interface to search over metadata for HEAL studies and related datasets.</li>
-<li>Each study and dataset will be assigned a unique, persistent identifier.</li>
-</ul>
-<p><strong>A</strong>ccessible</p>
-<ul>
-<li>Authenticated users can request and receive access to controlled-access data by data providers.</li>
-<li>Metadata can be accessed via an open API.</li>
-</ul>
-<p><strong>I</strong>nteroperable</p>
-<ul>
-<li>Standard metadata vocabularies facilitate discovery and joint analysis of HEAL and related datasets. Data can</li>
-<li>Data can be easily exported to various workspaces for analysis using a variety of software tools.</li>
-</ul>
-<p><strong>R</strong>eusable</p>
-<ul>
-<li>Data can be easily reused to facilitate reproducibility of results, development and sharing of new tools, and collaboration between investigators.</li>
-</ul>
-<p>FAIR data repositories are traditionally a part of a larger institution established for research, data archiving, and, to serve data users of that organization.</p>
+  <h1>healdata-utils temp</h1>
+
+<h2 id="how-to-generate-heal-compliant-data-dictionaries">How to Generate HEAL-compliant Data Dictionaries<a class="headerlink" href="#how-to-generate-heal-compliant-data-dictionaries" title="Permanent link">&para;</a></h2>
+<p>Or, Using healdata-utils (or something expressing a utility) to Generate HEAL-compliant Data Dictionaries</p>
+<p>In order to submit a data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>A current version of Python will be required to run the HEAL Data Utilities (healdata-utils).
+Please see our python installation instructions for more help.</p>
+<h3 id="virtual-environment-set-up">Virtual Environment Set Up<a class="headerlink" href="#virtual-environment-set-up" title="Permanent link">&para;</a></h3>
+<p>We highly recommend installing the HEAL Data Utilities in a virtual environment. There are several software dependencies that will be installed along with the healdata-utils; a virtual environment allows you to successfully install these packages without affecting other software already on your computer. You can learn more about creating virtual environments with Python <a href="https://docs.python.org/3/library/venv.html">here</a>.  </p>
+<p>Create a Project Folder
+<code>mkdir my_project/</code>
+<code>cd my_project</code>
+Create Input and Output Folders
+<code>mkdir input</code>
+<code>mkdir output</code>
+Create Virtual Environment
+<code>python -m venv venv –upgrade-deps</code>
+Activate Virtual Environment
+For MacOS and Linux: source venv/bin/activate
+For Windows: venv\Scripts\activate.bat
+If you would like to deactivate your virtual environment at any time, use the command: <code>deactivate</code></p>
+<h3 id="install-the-heal-data-utilities">Install the HEAL Data Utilities<a class="headerlink" href="#install-the-heal-data-utilities" title="Permanent link">&para;</a></h3>
+<p>Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities.</p>
+<p><code>pip install healdata-utils</code></p>
+<p>Next, to confirm that the HEAL Data Utilities package was installed correctly:</p>
+<p><code>which vlmd</code>
+The installation path should look like something like this:</p>
+<p><code>/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd</code></p>
+<h2 id="generate-a-heal-data-dictionary">Generate a HEAL Data Dictionary<a class="headerlink" href="#generate-a-heal-data-dictionary" title="Permanent link">&para;</a></h2>
+<p>Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL data dictionary. The command <code>vlmd</code> will be used to call the healdata-utils python package.</p>
+<p>To confirm installation and to see the different options:</p>
+<p><code>vlmd --help</code></p>
+<p><a href="imgs/healtdata-utils_options.png/">image</a></p>
+<p>Note that the only required flag is <code>--filepath</code>, the path to the file you want to convert to a HEAL data dictionary.</p>
+<p>Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:</p>
+<p>For MacOS and Linux:</p>
+<p><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></p>
+<p>For Windows:</p>
+<p>```</p>
+<p>Summary of CLI
+mkdir my_project
+cd my_project
+python -m venv venv
+source venv/bin/activate
+mkdir input
+mkdir output
+Download Your Redcap.csv Data Dictionary into the my_project/input/ folder
+pip install healdata-utils --pre
+vlmd --help
+vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</p>
 
 
 
@@ -693,7 +814,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../heal_workspace_registration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Workspace Registration" rel="prev">
+        <a href="../slmd_submission/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Study-Level Metadata Submission (CEDAR Form)" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -702,20 +823,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Workspace Registration
+              Study-Level Metadata Submission (CEDAR Form)
             </div>
           </div>
         </a>
       
       
         
-        <a href="../data_mgmt_and_repos/" class="md-footer__link md-footer__link--next" aria-label="Next: Data Management and Repositories" rel="next">
+        <a href="../vlmd_submission/" class="md-footer__link md-footer__link--next" aria-label="Next: Variable-level Metadata Submission" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Data Management and Repositories
+              Variable-level Metadata Submission
             </div>
           </div>
           <div class="md-footer__button md-icon">
