@@ -1,5 +1,4 @@
 # How to Generate HEAL-compliant Data Dictionaries
-Or, Using healdata-utils (or something expressing a utility) to Generate HEAL-compliant Data Dictionaries
 
 In order to submit a data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  
 
@@ -14,46 +13,45 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment.
 
 ### Create a Project Folder
 
-`mkdir my_project/`
+- `mkdir my_project/`
 
-`cd my_project `
+- `cd my_project `
 
 ### Create Input and Output Folders
 
-`mkdir input`
+- `mkdir input`
 
-`mkdir output`
+- `mkdir output`
 
 ### Create Virtual Environment
 
-`python -m venv venv –upgrade-deps`
+- `python -m venv venv –upgrade-deps`
 
 ### Activate Virtual Environment
 
 #### For MacOS and Linux:
 
-`source venv/bin/activate`
+##### `source venv/bin/activate`
 
 #### For Windows:
-`venv\Scripts\activate.bat`
 
-If you would like to deactivate your virtual environment at any time, use the command:
+##### `venv\Scripts\activate.bat`
 
-`deactivate`
+If you would like to deactivate your virtual environment at any time, use the command `deactivate`
 
 ## Install the HEAL Data Utilities
 
 Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities.
 
-`pip install healdata-utils`
+##### `pip install healdata-utils`
 
 Next, to confirm that the HEAL Data Utilities package was installed correctly:
 
-`which vlmd`
+##### `which vlmd`
 
 The installation path should look like something like this:
 
-`/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
+##### `/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
 
 ## Generate a HEAL Data Dictionary
 
@@ -61,7 +59,7 @@ Now that the HEAL Data Utilities python package has been successfully installed,
 
 To confirm installation and to see the different options:
 
-`vlmd --help`
+##### `vlmd --help`
 
 ![](../imgs/healtdata-utils_options.png/)
 
@@ -69,13 +67,13 @@ Note that the only required flag is `--filepath`, the path to the file you want 
 
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
 
-For MacOS and Linux:
+#### For MacOS and Linux:
 
-`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+##### `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
-For Windows:
+#### For Windows:
 
-`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+##### `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
 ---
 
