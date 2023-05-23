@@ -31,8 +31,8 @@ These two lines create a folder, or directory, named my_project. That folder is 
 [](../img/create_inputoutput.gif)
 
 These two lines create:
-- an input folder, where you will download your data dictionary, and
-- an output folder, where your generated HEAL-compliant data dictionary will be saved. 
+     - an input folder, where you will download your data dictionary, and
+     - an output folder, where your generated HEAL-compliant data dictionary will be saved. 
 
 ### Download Your Data Dictionary
 
