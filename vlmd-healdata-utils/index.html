@@ -379,6 +379,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#download-your-data-dictionary" class="md-nav__link">
+    Download Your Data Dictionary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-virtual-environment" class="md-nav__link">
     Create Virtual Environment
   </a>
@@ -395,14 +402,14 @@
         
           <li class="md-nav__item">
   <a href="#for-macos-and-linux" class="md-nav__link">
-    For MacOS and Linux:
+    For MacOS and Linux
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#for-windows" class="md-nav__link">
-    For Windows:
+    For Windows
   </a>
   
 </li>
@@ -434,20 +441,27 @@
         
           <li class="md-nav__item">
   <a href="#for-macos-and-linux_1" class="md-nav__link">
-    For MacOS and Linux:
+    For MacOS and Linux
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#for-windows_1" class="md-nav__link">
-    For Windows:
+    For Windows
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#at-this-point-you-can-deactivate-your-virtual-environment" class="md-nav__link">
+    At this point you can deactivate your virtual environment.
+  </a>
   
 </li>
       
@@ -789,6 +803,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#download-your-data-dictionary" class="md-nav__link">
+    Download Your Data Dictionary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#create-virtual-environment" class="md-nav__link">
     Create Virtual Environment
   </a>
@@ -805,14 +826,14 @@
         
           <li class="md-nav__item">
   <a href="#for-macos-and-linux" class="md-nav__link">
-    For MacOS and Linux:
+    For MacOS and Linux
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#for-windows" class="md-nav__link">
-    For Windows:
+    For Windows
   </a>
   
 </li>
@@ -844,20 +865,27 @@
         
           <li class="md-nav__item">
   <a href="#for-macos-and-linux_1" class="md-nav__link">
-    For MacOS and Linux:
+    For MacOS and Linux
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#for-windows_1" class="md-nav__link">
-    For Windows:
+    For Windows
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#at-this-point-you-can-deactivate-your-virtual-environment" class="md-nav__link">
+    At this point you can deactivate your virtual environment.
+  </a>
   
 </li>
       
@@ -887,11 +915,11 @@
 <p>In order to submit a data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>A current version of Python will be required to run the HEAL Data Utilities (healdata-utils).</p>
-<p>Please see our python installation instructions for more help.</p>
+<p>A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). </p>
+<p>Please see our python installation instructions for more help. </p>
 </div>
 <h2 id="set-up-a-virtual-environment">Set Up a Virtual Environment<a class="headerlink" href="#set-up-a-virtual-environment" title="Permanent link">&para;</a></h2>
-<p>We highly recommend installing the HEAL Data Utilities in a virtual environment. There are several software dependencies that will be installed along with the healdata-utils; a virtual environment allows you to successfully install these packages without affecting other software already on your computer. You can learn more about creating virtual environments with Python <a href="https://docs.python.org/3/library/venv.html">here</a>.  </p>
+<p>We highly recommend installing the HEAL Data Utilities in a virtual environment. Since there are several software dependencies that will be installed along with <code>healdata-utils</code>, a virtual environment allows you to successfully install these packages without affecting other software already on your computer. You can learn more about creating virtual environments with Python <a href="https://docs.python.org/3/library/venv.html">here</a>.  </p>
 <h3 id="create-a-project-folder">Create a Project Folder<a class="headerlink" href="#create-a-project-folder" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -901,6 +929,8 @@
 <p><code>cd my_project</code></p>
 </li>
 </ul>
+<p><a href="../img/create_project_folder.gif"></a></p>
+<p>These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. </p>
 <h3 id="create-input-and-output-folders">Create Input and Output Folders<a class="headerlink" href="#create-input-and-output-folders" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -910,45 +940,70 @@
 <p><code>mkdir output</code></p>
 </li>
 </ul>
-<p>You can now download</p>
+<p><a href="../img/create_inputoutput.gif"></a></p>
+<p>These two lines create:
+- an input folder, where you will download your data dictionary, and
+- an output folder, where your generated HEAL-compliant data dictionary will be saved. </p>
+<h3 id="download-your-data-dictionary">Download Your Data Dictionary<a class="headerlink" href="#download-your-data-dictionary" title="Permanent link">&para;</a></h3>
+<p>There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:</p>
+<div class="admonition formats">
+<p class="admonition-title">Formats</p>
+<ol>
+<li>data.csv</li>
+<li>template.csv</li>
+<li>csv</li>
+<li>sav</li>
+<li>dta</li>
+<li>por</li>
+<li>sas7bdat</li>
+<li>template.json</li>
+<li>json</li>
+<li>redcap.csv </li>
+</ol>
+</div>
+<p>Download your study’s data dictionary into the <code>my_project/input/</code> folder. If you would like more information on which file formats are supported, please check out here. </p>
 <h3 id="create-virtual-environment">Create Virtual Environment<a class="headerlink" href="#create-virtual-environment" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>python -m venv venv –upgrade-deps</code></li>
 </ul>
 <h3 id="activate-virtual-environment">Activate Virtual Environment<a class="headerlink" href="#activate-virtual-environment" title="Permanent link">&para;</a></h3>
-<h4 id="for-macos-and-linux">For MacOS and Linux:<a class="headerlink" href="#for-macos-and-linux" title="Permanent link">&para;</a></h4>
+<h4 id="for-macos-and-linux">For MacOS and Linux<a class="headerlink" href="#for-macos-and-linux" title="Permanent link">&para;</a></h4>
 <p><code>source venv/bin/activate</code></p>
-<h4 id="for-windows">For Windows:<a class="headerlink" href="#for-windows" title="Permanent link">&para;</a></h4>
+<h4 id="for-windows">For Windows<a class="headerlink" href="#for-windows" title="Permanent link">&para;</a></h4>
 <p><code>venv\Scripts\activate.bat</code></p>
-<p>If you would like to deactivate your virtual environment at any time, use the command <code>deactivate</code></p>
+<p>If you would like to deactivate your virtual environment at any time, use the command <code>deactivate</code>.</p>
 <h2 id="install-the-heal-data-utilities">Install the HEAL Data Utilities<a class="headerlink" href="#install-the-heal-data-utilities" title="Permanent link">&para;</a></h2>
-<p>Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities.</p>
+<p>Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities. </p>
 <p><code>pip install healdata-utils</code></p>
 <p>Next, to confirm that the HEAL Data Utilities package was installed correctly:</p>
 <p><code>which vlmd</code></p>
 <p>The installation path should look like something like this:</p>
 <p><code>/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd</code></p>
 <h2 id="generate-a-heal-data-dictionary">Generate a HEAL Data Dictionary<a class="headerlink" href="#generate-a-heal-data-dictionary" title="Permanent link">&para;</a></h2>
-<p>Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL data dictionary. The command <code>vlmd</code> will be used to call the healdata-utils python package.</p>
+<p>Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL data dictionary. The command <code>vlmd</code> will be used to call the healdata-utils python package. </p>
 <p>To confirm installation and to see the different options:</p>
 <p><code>vlmd --help</code></p>
 <p><img alt="" src="../imgs/healtdata-utils_options.png/" /></p>
-<p>Note that the only required flag is <code>--filepath</code>, the path to the file you want to convert to a HEAL data dictionary.</p>
+<p>Note that the only required flag is <code>--filepath</code>, the path to the file you want to convert to a HEAL data dictionary. </p>
 <p>Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:</p>
-<h4 id="for-macos-and-linux_1">For MacOS and Linux:<a class="headerlink" href="#for-macos-and-linux_1" title="Permanent link">&para;</a></h4>
+<h4 id="for-macos-and-linux_1">For MacOS and Linux<a class="headerlink" href="#for-macos-and-linux_1" title="Permanent link">&para;</a></h4>
 <p><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></p>
-<h4 id="for-windows_1">For Windows:<a class="headerlink" href="#for-windows_1" title="Permanent link">&para;</a></h4>
-<p><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></p>
-<hr />
+<h4 id="for-windows_1">For Windows<a class="headerlink" href="#for-windows_1" title="Permanent link">&para;</a></h4>
+<p><code>vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv</code></p>
+<p>If you do not enter a <code>--description</code>, it will produce an error for the JSON format: </p>
+<p><code>JSON data dictionary not valid, see heal-json-errors.json</code></p>
+<p>title</p>
+<h2 id="at-this-point-you-can-deactivate-your-virtual-environment">At this point you can deactivate your virtual environment.<a class="headerlink" href="#at-this-point-you-can-deactivate-your-virtual-environment" title="Permanent link">&para;</a></h2>
 <h2 id="summary-of-command-line-prompts">Summary of Command Line Prompts<a class="headerlink" href="#summary-of-command-line-prompts" title="Permanent link">&para;</a></h2>
 <ol>
 <li><code>mkdir my_project</code></li>
 <li><code>cd my_project</code></li>
 <li><code>python -m venv venv</code></li>
-<li><code>source venv/bin/activate</code></li>
+<li>Activate your virtual environment
+<code>source venv/bin/activate</code> or <code>venv\Scripts\activate.bat</code></li>
 <li><code>mkdir input</code></li>
 <li><code>mkdir output</code></li>
-<li>Download Your Redcap.csv Data Dictionary into the my_project/input/ folder</li>
+<li>Download Your Redcap.csv Data Dictionary into the <code>my_project/input/</code> folder</li>
 <li><code>pip install healdata-utils</code></li>
 <li><code>vlmd --help</code></li>
 <li><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></li>
