@@ -38,7 +38,7 @@ These two lines create:
 
 There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
 
-!!! formats
+!!! input file formats
      1. data.csv
      2. template.csv
      3. csv
