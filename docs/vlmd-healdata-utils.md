@@ -26,20 +26,20 @@ These two lines create a folder, or directory, named my_project. That folder is 
 
 [](../img/create_inputoutput.gif)
 
-     - `mkdir input`
+     * `mkdir input`
 
-     - `mkdir output`
+     * `mkdir output`
 
 These two lines create:
 
-     - an input folder, where you will download your study’s data dictionary; and
+     * an input folder, where you will download your study’s data dictionary; and
 
-     - an output folder, where your generated HEAL-compliant data dictionary will be saved.
+     * an output folder, where your generated HEAL-compliant data dictionary will be saved.
+     
 ### Download Your Study’s Data Dictionary
 
 There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
 
-!!! supportedinput file formats
      1. data.csv
      2. template.csv
      3. csv
