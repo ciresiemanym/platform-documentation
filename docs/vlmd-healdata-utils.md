@@ -17,24 +17,21 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment,
 <p align="center">![](../img/create_project_folder.gif)</p>
 
 - `mkdir my_project/`
-
 - `cd my_project `
 
 These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. 
 
 ### Create Input and Output Folders
 
-[](../img/create_inputoutput.gif)
+![](../img/create_inputoutput.gif)
 
-     * `mkdir input`
-
-     * `mkdir output`
+- `mkdir input`
+- `mkdir output`
 
 These two lines create:
 
-     * an input folder, where you will download your study’s data dictionary; and
-
-     * an output folder, where your generated HEAL-compliant data dictionary will be saved.
+- an input folder, where you will download your study’s data dictionary; and
+- an output folder, where your generated HEAL-compliant data dictionary will be saved.
      
 ### Download Your Study’s Data Dictionary
 
