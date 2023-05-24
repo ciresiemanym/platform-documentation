@@ -1,71 +1,129 @@
-# Registering Your Study
+# How to Generate HEAL-compliant Data Dictionaries
+
+In order to submit a study’sa data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  
 
 !!! info
+     A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). 
+     
+     Please see our python installation instructions for more help. 
 
-    You must [request access](../requesting-access/) before you can register
-    your study.
 
-    Also, if you have not already done so, create an account with
-    [CEDAR](https://cedar.metadatacenter.org/) (choose the "Register" option
-    to quickly set up an account). You will need a CEDAR account to complete
-    the registration process. *Note that your CEDAR User UUID can be found at
-    the top of your CEDAR profile page.*
+## Set Up a Virtual Environment
 
-!!! info
+We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with `healdata-utils`., Aa virtual environment will allowallows you to successfully install these packages without affecting other software installedalready on your computer. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
-    This video highlights the next step in registering your study on the HEAL Data Platform. Registration with the HEAL Platform is necessary for compliance with the HEAL Data Sharing Policy. Written instructions are below. 
+### Create a Project Folder
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8ThpaRTvf8o" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+<p align="center">![](../img/create_project_folder.gif)</p>
 
-Upon receiving notification that you’ve been granted access to register your
-study, please proceed with the steps outlined below.
+- `mkdir my_project/`
 
-## Step 1:  Login to the HEAL Data Platform 
+- `cd my_project `
 
-![](../img/heal_login.png)
+These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. 
 
-## Step 2: Find your study
+### Create Input and Output Folders
 
-From the [Discovery Page](https://healdata.org/portal/discovery), find the
-study you wish to register:
+[](../img/create_inputoutput.gif)
 
-- Click on the study to open the Study Page 
-- At the top of the Study Page, select ‘Request Access to Register This Study’
-  to navigate to the [Study Registration form](https://healdata.org/portal/study-reg).
+     - `mkdir input`
 
-## Step 3:  Complete the Study Registration form
+     - `mkdir output`
 
-- The `Study` field will already be filled in
-- If known, a valid ClinicalTrials.gov ID (NCT #) can be entered, which will
-  enable the platform to pull some additional metadata related to the study.
-- If known, select the repository you have submitted data to, or intend to
-  submit data to.  This will help the Platform us and the repository to which
-  you have submitted or will be submitting your data to anticipate and plan
-  accordingly.
-  - If your repository is not listed, please
-    [contact us](mailto:heal-support@datacommons.io) with those details.
-- Enter the unique ID for your study within the repository.
-- Submit your registration.
+These two lines create:
 
-Alternate steps to register a study:
+     - an input folder, where you will download your study’s data dictionary; and
 
-- Login to the [Study Registration form](https://healdata.org/portal/study-reg)
-- Choose the study you wish to register from the Study dropdown.  Only those
-  studies you have been approved to register will be displayed in the dropdown.
-- Complete the form as noted above and submit.
+     - an output folder, where your generated HEAL-compliant data dictionary will be saved.
+### Download Your Study’s Data Dictionary
 
-![](../img/completed_reg_form.png)
+There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
 
-## Next Steps: Fill out your CEDAR form  
+!!! supportedinput file formats
+     1. data.csv
+     2. template.csv
+     3. csv
+     4. sav
+     5. dta
+     6. por
+     7. sas7bdat
+     8. template.json
+     9. json
+     10. redcap.csv 
 
-The act of submitting the study registration form will result in the creation of a metadata input
-form within your CEDAR account:
+Download your study’s data dictionary into the `my_project/input/` folder. If you would like more information on which file formats are supported, please check out here. 
 
-- Find the form for your study under the 'Shared with Me' folder on CEDAR
-  (accessible in the left-hand navigation).
-- When you enter additional data into the CEDAR form, be sure to SAVE your
-  changes by scrolling to the bottom of the form.
-- The HEAL Data Platform will pull entries from the CEDAR templates into the
-  Platform to enhance search capabilities and provide increasingly robust
-  study details.
-- An overview of completing the CEDAR metadata form can be found [here](../slmd_submission.md).
+### Create Virtual Environment
+
+- `python -m venv venv –upgrade-deps`
+
+### Activate Virtual Environment
+
+#### For MacOS and Linux
+
+ `source venv/bin/activate`
+
+#### For Windows
+
+`venv\Scripts\activate.bat`
+
+If you would like to deactivate your virtual environment at any time, use the command `deactivate`.
+
+## Install the HEAL Data Utilities 
+
+Now that you’vewe’ve created and activated your virtual environment, youwe can install the HEAL Data Utilities. 
+
+`pip install healdata-utils`
+
+Next, to confirm that the HEAL Data Utilities package was installed correctly:
+
+`which vlmd`
+
+The installation path should look like something like this:
+
+`/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
+
+## Generate a HEAL Data Dictionary 
+
+Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL data dictionary. The command `vlmd` will be used to call the healdata-utils python package. 
+
+To confirm installation and to see the different options:
+
+`vlmd --help`
+
+![](../imgs/healtdata-utils_options.png/)
+
+Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
+
+Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
+
+#### For MacOS and Linux
+
+`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+
+#### For Windows
+
+`vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
+
+If you do not enter a `--description`, it will produce an error for the JSON format: 
+
+`JSON data dictionary not valid, see heal-json-errors.json`
+
+title
+
+At this point you can deactivate your virtual environment. 
+---
+
+## Summary of Command Line Prompts
+
+1. `mkdir my_project`
+2. `cd my_project`
+3. `python -m venv venv`
+4. Activate your virtual environment
+`source venv/bin/activate` or `venv\Scripts\activate.bat`
+5. `mkdir input`
+6. `mkdir output`
+7. Download Your Redcap.csv Data Dictionary into the `my_project/input/` folder
+8. `pip install healdata-utils`
+9. `vlmd --help`
+10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
