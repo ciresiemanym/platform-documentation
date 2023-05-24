@@ -14,7 +14,7 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment,
 
 ### Create a Project Folder
 
-<p align="center">[](../img/create_project_folder.gif)</p>
+<p align="center"> ![](../img/create_project_folder.gif) </p>
 
 - `mkdir my_project/`
 - `cd my_project `
@@ -23,10 +23,10 @@ These two lines create a folder, or directory, named my_project. That folder is 
 
 ### Create Input and Output Folders
 
-<p align="center">[](../img/create_inputoutput.gif)</p>
+<p align="center"> ![](../img/create_inputoutput.gif) </p>
 
-     - `mkdir input`
-     - `mkdir output`
+- `mkdir input`
+- `mkdir output`
 
 These two lines create:
 
@@ -60,11 +60,11 @@ Download your study’s data dictionary into the `my_project/input/` folder. If 
 
 #### For MacOS and Linux
 
- `source venv/bin/activate`
+     `source venv/bin/activate`
 
 #### For Windows
 
-`venv\Scripts\activate.bat`
+     `venv\Scripts\activate.bat`
 
 If you would like to deactivate your virtual environment at any time, use the command `deactivate`.
 
@@ -72,15 +72,15 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 Now that you’vewe’ve created and activated your virtual environment, youwe can install the HEAL Data Utilities. 
 
-`pip install healdata-utils`
+     `pip install healdata-utils`
 
 Next, to confirm that the HEAL Data Utilities package was installed correctly:
 
-`which vlmd`
+     `which vlmd`
 
 The installation path should look like something like this:
 
-`/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
+     `/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
 
 ## Generate a HEAL Data Dictionary 
 
@@ -88,7 +88,7 @@ Now that the HEAL Data Utilities python package has been successfully installed,
 
 To confirm installation and to see the different options:
 
-`vlmd --help`
+     `vlmd --help`
 
 ![](../imgs/healtdata-utils_options.png/)
 
@@ -96,17 +96,17 @@ Note that the only required flag is `--filepath`, the path to the file you want 
 
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
 
-    #### For MacOS and Linux
+#### For MacOS and Linux
 
-     `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
-    #### For Windows
+#### For Windows
 
-     `vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
+`vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
 
 If you do not enter a `--description`, it will produce an error for the JSON format: 
 
-`JSON data dictionary not valid, see heal-json-errors.json`
+     `JSON data dictionary not valid, see heal-json-errors.json`
 
 title
 
