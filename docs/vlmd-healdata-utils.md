@@ -1,6 +1,6 @@
 # How to Generate HEAL-compliant Data Dictionaries
 
-In order to submit a data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  
+In order to submit a study’sa data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  
 
 !!! info
      A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). 
@@ -10,35 +10,36 @@ In order to submit a data dictionary to the Platform, the data dictionary must c
 
 ## Set Up a Virtual Environment
 
-We highly recommend installing the HEAL Data Utilities in a virtual environment. Since there are several software dependencies that will be installed along with `healdata-utils`, a virtual environment allows you to successfully install these packages without affecting other software already on your computer. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
+We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with `healdata-utils`., Aa virtual environment will allowallows you to successfully install these packages without affecting other software installedalready on your computer. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 ### Create a Project Folder
+
+<p align="center">![](../img/create_project_folder.gif)</p>
 
 - `mkdir my_project/`
 
 - `cd my_project `
 
-[](../img/create_project_folder.gif)
-
 These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. 
 
 ### Create Input and Output Folders
 
-- `mkdir input`
-
-- `mkdir output`
-
 [](../img/create_inputoutput.gif)
 
-These two lines create:
-     - an input folder, where you will download your data dictionary, and
-     - an output folder, where your generated HEAL-compliant data dictionary will be saved. 
+     - `mkdir input`
 
-### Download Your Data Dictionary
+     - `mkdir output`
+
+These two lines create:
+
+     - an input folder, where you will download your study’s data dictionary; and
+
+     - an output folder, where your generated HEAL-compliant data dictionary will be saved.
+### Download Your Study’s Data Dictionary
 
 There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
 
-!!! input file formats
+!!! supportedinput file formats
      1. data.csv
      2. template.csv
      3. csv
@@ -70,7 +71,7 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 ## Install the HEAL Data Utilities 
 
-Now that we’ve created and activated our virtual environment, we can install the HEAL Data Utilities. 
+Now that you’vewe’ve created and activated your virtual environment, youwe can install the HEAL Data Utilities. 
 
 `pip install healdata-utils`
 
