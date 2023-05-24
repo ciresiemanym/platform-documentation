@@ -881,7 +881,7 @@
 <h2 id="set-up-a-virtual-environment">Set Up a Virtual Environment<a class="headerlink" href="#set-up-a-virtual-environment" title="Permanent link">&para;</a></h2>
 <p>We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with <code>healdata-utils</code>., Aa virtual environment will allowallows you to successfully install these packages without affecting other software installedalready on your computer. You can learn more about creating virtual environments with Python <a href="https://docs.python.org/3/library/venv.html">here</a>.  </p>
 <h3 id="create-a-project-folder">Create a Project Folder<a class="headerlink" href="#create-a-project-folder" title="Permanent link">&para;</a></h3>
-<p align="center">![](../img/create_project_folder.gif)</p>
+<p align="center">[](../img/create_project_folder.gif)</p>
 
 <ul>
 <li><code>mkdir my_project/</code></li>
@@ -889,16 +889,17 @@
 </ul>
 <p>These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. </p>
 <h3 id="create-input-and-output-folders">Create Input and Output Folders<a class="headerlink" href="#create-input-and-output-folders" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../img/create_inputoutput.gif" /></p>
-<ul>
-<li><code>mkdir input</code></li>
-<li><code>mkdir output</code></li>
-</ul>
+<p align="center">[](../img/create_inputoutput.gif)</p>
+
+<pre><code> - `mkdir input`
+ - `mkdir output`
+</code></pre>
 <p>These two lines create:</p>
-<ul>
-<li>an input folder, where you will download your study’s data dictionary; and</li>
-<li>an output folder, where your generated HEAL-compliant data dictionary will be saved.</li>
-</ul>
+<pre><code> - an input folder, 
+      where you will download your study’s data dictionary; and
+ - an output folder, 
+      where your generated HEAL-compliant data dictionary will be saved.
+</code></pre>
 <h3 id="download-your-studys-data-dictionary">Download Your Study’s Data Dictionary<a class="headerlink" href="#download-your-studys-data-dictionary" title="Permanent link">&para;</a></h3>
 <p>There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:</p>
 <pre><code> 1. data.csv
