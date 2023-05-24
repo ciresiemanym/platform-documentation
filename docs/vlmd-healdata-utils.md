@@ -94,13 +94,13 @@ Note that the only required flag is `--filepath`, the path to the file you want 
 
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
 
-#### For MacOS and Linux
+    #### For MacOS and Linux
 
-`vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+     `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
-#### For Windows
+    #### For Windows
 
-`vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
+     `vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
 
 If you do not enter a `--description`, it will produce an error for the JSON format: 
 
@@ -113,14 +113,14 @@ At this point you can deactivate your virtual environment.
 
 ## Summary of Command Line Prompts
 
-1. `mkdir my_project`
-2. `cd my_project`
-3. `python -m venv venv`
-4. Activate your virtual environment
-`source venv/bin/activate` or `venv\Scripts\activate.bat`
-5. `mkdir input`
-6. `mkdir output`
-7. Download Your Redcap.csv Data Dictionary into the `my_project/input/` folder
-8. `pip install healdata-utils`
-9. `vlmd --help`
-10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+    1. `mkdir my_project`
+    2. `cd my_project`
+    3. `python -m venv venv`
+    4. Activate your virtual environment
+     - `source venv/bin/activate` or `venv\Scripts\activate.bat`
+    5. `mkdir input`
+    6. `mkdir output`
+    7. Download Your Redcap.csv Data Dictionary into the `my_project/input/` folder
+    8. `pip install healdata-utils`
+    9. `vlmd --help`
+    10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
