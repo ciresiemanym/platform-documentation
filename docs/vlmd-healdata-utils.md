@@ -1,22 +1,23 @@
 # How to Generate HEAL-compliant Data Dictionaries
 
-In order to submit a study’sa data dictionary to the Platform, the data dictionary must conform to the HEAL variable-level metadata schema. This page will show you how to use a tool we’ve created (healdata-utils) to help you generate a HEAL-compliant data dictionary.  
+In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called healdata-utils) to help you make your existing data dictionary HEAL-compliant.  
 
 !!! info
      A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). 
      
-     Please see our python installation instructions for more help. 
+     You can download the latest version of Python [here](https://www.python.org/downloads/)Please see our python installation instructions for more help. 
 
 
 ## Set Up a Virtual Environment
 
-We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with `healdata-utils`., Aa virtual environment will allowallows you to successfully install these packages without affecting other software installedalready on your computer. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
+We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with `healdata-utils`., Aa virtual environment will allowallows you to successfully install these packages without affecting other software already installedalready on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 ### Create a Project Folder
 
 ![](../img/create_project_folder.gif)
 
 - `mkdir my_project/`
+
 - `cd my_project `
 
 These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. 
@@ -25,19 +26,19 @@ These two lines create a folder, or directory, named my_project. That folder is 
 
 ![](../img/create_inputoutput.gif)
 
-- `mkdir input`
-- `mkdir output`
+     - `mkdir input`
+
+     - `mkdir output`
 
 These two lines create:
 
-     - an input folder, 
-          where you will download your study’s data dictionary; and
-     - an output folder, 
-          where your generated HEAL-compliant data dictionary will be saved.
-     
+     - an input folder, where you will download your study’s data dictionary; and
+
+     - an output folder, where your generated HEAL-compliant data dictionary will be saved.
+
 ### Download Your Study’s Data Dictionary
 
-There are many applications and softwares that are used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
+There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
 
      1. data.csv
      2. template.csv
@@ -58,11 +59,11 @@ Download your study’s data dictionary into the `my_project/input/` folder. If 
 
 ### Activate Virtual Environment
 
-#### For MacOS and Linux
+#### MacOS and Linux
 
-`source venv/bin/activate`
+ `source venv/bin/activate`
 
-#### For Windows
+#### Windows
 
 `venv\Scripts\activate.bat`
 
@@ -70,7 +71,7 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 ## Install the HEAL Data Utilities 
 
-Now that you’vewe’ve created and activated your virtual environment, youwe can install the HEAL Data Utilities. 
+Now that you’ve created and activated your virtual environment, you can install the HEAL Data Utilities. 
 
 `pip install healdata-utils`
 
@@ -84,9 +85,9 @@ The installation path should look like something like this:
 
 ## Generate a HEAL Data Dictionary 
 
-Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL data dictionary. The command `vlmd` will be used to call the healdata-utils python package. 
+Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL-compliant data dictionary. The command `vlmd` will be used to call the healdata-utils python package. 
 
-To confirm installation and to see the different options:
+To confirm installation and to see the different command options:
 
 `vlmd --help`
 
@@ -96,17 +97,29 @@ Note that the only required flag is `--filepath`, the path to the file you want 
 
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
 
-#### For MacOS and Linux
+#### MacOS and Linux
+
+Execute the following command: 
 
 `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
-#### For Windows
+In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
 
-`vlmd --filepath .\/input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\/output\/heal-vlmd-from-redcap.csv`
+Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the `/output/` directory.
+
+#### Windows
+
+Execute the following command: 
+
+`vlmd --filepath .\input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\output\heal-vlmd-from-redcap.csv`
+
+In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
+
+Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the `/output/` folderdirectory.
 
 If you do not enter a `--description`, it will produce an error for the JSON format: 
 
-     `JSON data dictionary not valid, see heal-json-errors.json`
+`JSON data dictionary not valid, see heal-json-errors.json`
 
 title
 
@@ -115,14 +128,14 @@ At this point you can deactivate your virtual environment.
 
 ## Summary of Command Line Prompts
 
-    1. `mkdir my_project`
-    2. `cd my_project`
-    3. `python -m venv venv`
-    4. Activate your virtual environment
-     - `source venv/bin/activate` or `venv\Scripts\activate.bat`
-    5. `mkdir input`
-    6. `mkdir output`
-    7. Download Your Redcap.csv Data Dictionary into the `my_project/input/` folder
-    8. `pip install healdata-utils`
-    9. `vlmd --help`
-    10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+1. `mkdir my_project`
+2. `cd my_project`
+3. `python -m venv venv`
+4. Activate your virtual environment
+`source venv/bin/activate` or `venv\Scripts\activate.bat`
+5. `mkdir input`
+6. `mkdir output`
+7. Download Your Data Dictionary into the `my_project/input/` folder
+8. `pip install healdata-utils`
+9. `vlmd --help`
+10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
