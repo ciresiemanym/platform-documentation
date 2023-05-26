@@ -5,12 +5,11 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 !!! info
      A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). 
      
-     You can download the latest version of Python [here](https://www.python.org/downloads/)Please see our python installation instructions for more help. 
-
+     You can download the latest version of Python [here](https://www.python.org/downloads/)
 
 ## Set Up a Virtual Environment
 
-We highly recommend installing the HEAL Data Utilities in a virtual environment, s. Since there are several software dependencies that will be installed along with `healdata-utils`., Aa virtual environment will allowallows you to successfully install these packages without affecting other software already installedalready on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
+We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 ### Create a Project Folder
 
@@ -61,7 +60,7 @@ Download your study’s data dictionary into the `my_project/input/` folder. If 
 
 #### MacOS and Linux
 
- `source venv/bin/activate`
+`source venv/bin/activate`
 
 #### Windows
 
