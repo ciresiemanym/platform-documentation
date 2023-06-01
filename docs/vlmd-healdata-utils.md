@@ -3,10 +3,9 @@
 !!! info
     
      In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). 
-     
      The following instructions will demonstrate how to use a tool we’ve created (called the HEAL Data Utilities) to help you make your existing data dictionary HEAL-compliant.
 
-## Getting Started 
+## 1. Getting Started 
 
 ### Command-line Interface (CLI)
 
@@ -35,7 +34,7 @@ The HEAL Data Utilities was built on Python, a widely used programming language 
 
 You can download the latest version of Python [here](https://www.python.org/downloads/)
 
-## Set Up a Virtual Environment
+## 2. Set Up a Virtual Environment
 
 We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
@@ -96,7 +95,7 @@ Download your study’s data dictionary into the `my_project/input/` folder. If 
 
 If you would like to deactivate your virtual environment at any time, use the command `deactivate`.
 
-## Install the HEAL Data Utilities 
+## 3. Install the HEAL Data Utilities 
 
 Now that you’ve created and activated your virtual environment, you can install the HEAL Data Utilities. 
 
@@ -110,7 +109,7 @@ The installation path should look like something like this:
 
 `/Users/my_username/path_to_project_folder/my_project/venv/bin/vlmd`
 
-## Generate a HEAL Data Dictionary 
+## 4. Generate a HEAL Data Dictionary 
 
 Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL-compliant data dictionary. The command `vlmd` will be used to call the healdata-utils python package. 
 
