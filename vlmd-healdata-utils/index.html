@@ -357,6 +357,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface-cli" class="md-nav__link">
+    Command-line Interface (CLI)
+  </a>
+  
+    <nav class="md-nav" aria-label="Command-line Interface (CLI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-and-pc-powershell-and-command-prompt" class="md-nav__link">
+    Windows and PC: PowerShell and Command Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#set-up-a-virtual-environment" class="md-nav__link">
     Set Up a Virtual Environment
   </a>
@@ -408,8 +462,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
+  <a href="#windows-and-pc" class="md-nav__link">
+    Windows and PC
   </a>
   
 </li>
@@ -447,8 +501,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
-    Windows
+  <a href="#windows-and-pc_1" class="md-nav__link">
+    Windows and PC
   </a>
   
 </li>
@@ -781,6 +835,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    Getting Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#command-line-interface-cli" class="md-nav__link">
+    Command-line Interface (CLI)
+  </a>
+  
+    <nav class="md-nav" aria-label="Command-line Interface (CLI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#macos" class="md-nav__link">
+    macOS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#windows-and-pc-powershell-and-command-prompt" class="md-nav__link">
+    Windows and PC: PowerShell and Command Prompt
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" class="md-nav__link">
+    Python
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#set-up-a-virtual-environment" class="md-nav__link">
     Set Up a Virtual Environment
   </a>
@@ -832,8 +940,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows" class="md-nav__link">
-    Windows
+  <a href="#windows-and-pc" class="md-nav__link">
+    Windows and PC
   </a>
   
 </li>
@@ -871,8 +979,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#windows_1" class="md-nav__link">
-    Windows
+  <a href="#windows-and-pc_1" class="md-nav__link">
+    Windows and PC
   </a>
   
 </li>
@@ -912,12 +1020,29 @@
 
 
 <h1 id="how-to-generate-heal-compliant-data-dictionaries">How to Generate HEAL-compliant Data Dictionaries<a class="headerlink" href="#how-to-generate-heal-compliant-data-dictionaries" title="Permanent link">&para;</a></h1>
-<p>In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL <a href="https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema">variable-level metadata schema</a>. The following instructions will demonstrate how to use a tool we’ve created (called healdata-utils) to help you make your existing data dictionary HEAL-compliant.  </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
+<p>In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL <a href="https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema">variable-level metadata schema</a>. </p>
+<p>The following instructions will demonstrate how to use a tool we’ve created (called the HEAL Data Utilities) to help you make your existing data dictionary HEAL-compliant.</p>
+</div>
+<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
+<h3 id="command-line-interface-cli">Command-line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permanent link">&para;</a></h3>
+<p>The HEAL Data Utilities is a software package that can be leveraged via a command-line interface. If you already have experience with the command-line interface, please see <a href="./vlmd//temp.md">our instructions for advanced users</a>.</p>
+<p>To get started, you will need to navigate to your computer’s command-line interface, or CLI. </p>
+<h4 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h4>
+<p>On your Mac, do one of the following:
+- Click the Launchpad icon in the Dock, type <strong>Terminal</strong> in the search field, then click <strong>Terminal</strong>.
+- In the Finder, open the <strong>/Applications/Utilities</strong> folder, then double-click <strong>Terminal</strong>.
+- Press ‘Command + Space’ </p>
+<h4 id="windows-and-pc-powershell-and-command-prompt">Windows and PC: PowerShell and Command Prompt<a class="headerlink" href="#windows-and-pc-powershell-and-command-prompt" title="Permanent link">&para;</a></h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="linux">Linux:<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h4>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h3>
+<p>The HEAL Data Utilities was built on Python, a widely used programming language that may   already be installed on your computer.</p>
 <p>A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). </p>
 <p>You can download the latest version of Python <a href="https://www.python.org/downloads/">here</a></p>
-</div>
 <h2 id="set-up-a-virtual-environment">Set Up a Virtual Environment<a class="headerlink" href="#set-up-a-virtual-environment" title="Permanent link">&para;</a></h2>
 <p>We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with <code>healdata-utils</code>. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python <a href="https://docs.python.org/3/library/venv.html">here</a>.  </p>
 <h3 id="create-a-project-folder">Create a Project Folder<a class="headerlink" href="#create-a-project-folder" title="Permanent link">&para;</a></h3>
@@ -963,7 +1088,7 @@
 <h3 id="activate-virtual-environment">Activate Virtual Environment<a class="headerlink" href="#activate-virtual-environment" title="Permanent link">&para;</a></h3>
 <h4 id="macos-and-linux">MacOS and Linux<a class="headerlink" href="#macos-and-linux" title="Permanent link">&para;</a></h4>
 <p><code>source venv/bin/activate</code></p>
-<h4 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h4>
+<h4 id="windows-and-pc">Windows and PC<a class="headerlink" href="#windows-and-pc" title="Permanent link">&para;</a></h4>
 <p><code>venv\Scripts\activate.bat</code></p>
 <p>If you would like to deactivate your virtual environment at any time, use the command <code>deactivate</code>.</p>
 <h2 id="install-the-heal-data-utilities">Install the HEAL Data Utilities<a class="headerlink" href="#install-the-heal-data-utilities" title="Permanent link">&para;</a></h2>
@@ -985,7 +1110,7 @@
 <p><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></p>
 <p>In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. </p>
 <p>Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the <code>/output/</code> directory.</p>
-<h4 id="windows_1">Windows<a class="headerlink" href="#windows_1" title="Permanent link">&para;</a></h4>
+<h4 id="windows-and-pc_1">Windows and PC<a class="headerlink" href="#windows-and-pc_1" title="Permanent link">&para;</a></h4>
 <p>Execute the following command: </p>
 <p><code>vlmd --filepath .\input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\output\heal-vlmd-from-redcap.csv</code></p>
 <p>In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. </p>
