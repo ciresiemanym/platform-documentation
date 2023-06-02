@@ -1,26 +1,25 @@
 # How to Generate HEAL-compliant Data Dictionaries
 
-!!! info
-    
-     In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). 
-     The following instructions will demonstrate how to use a tool we’ve created (called the HEAL Data Utilities) to help you make your existing data dictionary HEAL-compliant.
+In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the HEAL Data Utilities) to help you make your existing data dictionary HEAL-compliant.
 
 ## 1. Getting Started 
-
-### Command-line Interface (CLI)
 
 The HEAL Data Utilities is a software package that can be leveraged via a command-line interface. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
 
 To get started, you will need to navigate to your computer’s command-line interface, or CLI. 
 
+### Command-line Interface (CLI)
+
 #### macOS 
 
 On your Mac, do one of the following:
-- Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
-- In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.
-- Press ‘Command + Space’ 
+     - Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
+     - In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.
+     - Press ‘Command + Space’ 
 
-#### Windows and PC: PowerShell and Command Prompt
+#### Windows and PC: 
+
+PowerShell and Command Prompt
 
 - 
 
@@ -28,11 +27,9 @@ On your Mac, do one of the following:
 
 ### Python
 
-The HEAL Data Utilities was built on Python, a widely used programming language that may   already be installed on your computer.
+The HEAL Data Utilities is built on Python, a widely used programming language that may   already be installed on your computer.
 
- A current version of Python will be required to run the HEAL Data Utilities (healdata-utils). 
-
-You can download the latest version of Python [here](https://www.python.org/downloads/)
+While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/)
 
 ## 2. Set Up a Virtual Environment
 
