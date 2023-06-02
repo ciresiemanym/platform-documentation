@@ -4,18 +4,22 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 ## 1. Getting Started 
 
-The HEAL Data Utilities is a software package that can be leveraged via a command-line interface. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
+The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
 
-To get started, you will need to navigate to your computer’s command-line interface, or CLI. 
+To get started, you will need to navigate to your computer’s **command-line interface**, or CLI. The following will provide brief 
 
 ### Command-line Interface (CLI)
 
 #### macOS 
 
 On your Mac, do one of the following:
-     - Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
-     - In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.
-     - Press ‘Command + Space’ 
+- Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
+
+
+- In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.     
+
+
+- Press ‘Command + Space’ 
 
 #### Windows and PC: 
 
