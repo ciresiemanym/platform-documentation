@@ -1,6 +1,6 @@
 # How to Generate HEAL-compliant Data Dictionaries
 
-In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the HEAL Data Utilities) to help you make your existing data dictionary HEAL-compliant.
+In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the **HEAL Data Utilities**) to help you make your existing data dictionary HEAL-compliant.
 
 ## 1. Getting Started 
 
@@ -13,6 +13,8 @@ To get started, you will need to navigate to your computer’s **command-line in
 #### macOS 
 
 On your Mac, do one of the following:
+
+
 - Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
 
 
