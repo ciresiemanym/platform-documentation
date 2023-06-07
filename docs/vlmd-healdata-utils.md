@@ -4,7 +4,7 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 ##  Getting Started 
 
-The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
+The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](#3-install-the-heal-data-utilities).
 
 ### The Command-line Interface (CLI)
 
@@ -22,6 +22,9 @@ Once you have opened the command-line interface, you can now begin following the
 ## 2. Set Up a Virtual Environment
 
 We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
+
+!!! info
+     If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol. The following instructions are for those with less familiarity with the CLI and virtual environemnts. Please jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
 
 ### Create a Project Folder
 
