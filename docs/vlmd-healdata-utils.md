@@ -122,7 +122,6 @@ To confirm installation and to see the different command options:
 
 `vlmd --help`
 
-
 ![](../img/vlmd_options.png)
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
@@ -169,8 +168,3 @@ If you do not enter a `--description`, it will produce an error for the JSON for
 8. `pip install healdata-utils`
 9. `vlmd --help`
 10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
-
-
-input/sprint_2020-12-16.xlsx
-
-vlmd --filepath ./input/sprint_2020-12-16.redcap.csv --inputtype redcap.csv --outputdir ./output/sprint_2020-12-16-heal-dd.csv
