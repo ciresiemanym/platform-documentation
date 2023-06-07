@@ -365,11 +365,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#command-line-interface-cli" class="md-nav__link">
-    Command-line Interface (CLI)
+  <a href="#the-command-line-interface-cli" class="md-nav__link">
+    The Command-line Interface (CLI)
   </a>
   
-    <nav class="md-nav" aria-label="Command-line Interface (CLI)">
+    <nav class="md-nav" aria-label="The Command-line Interface (CLI)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -843,11 +843,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#command-line-interface-cli" class="md-nav__link">
-    Command-line Interface (CLI)
+  <a href="#the-command-line-interface-cli" class="md-nav__link">
+    The Command-line Interface (CLI)
   </a>
   
-    <nav class="md-nav" aria-label="Command-line Interface (CLI)">
+    <nav class="md-nav" aria-label="The Command-line Interface (CLI)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1024,21 +1024,22 @@
 <h2 id="1-getting-started">1. Getting Started<a class="headerlink" href="#1-getting-started" title="Permanent link">&para;</a></h2>
 <p>The HEAL Data Utilities is a software package that can be leveraged via a <strong>command-line interface</strong>. If you already have experience with the command-line interface, please see <a href="./vlmd//temp.md">our instructions for advanced users</a>.</p>
 <p>To get started, you will need to navigate to your computer’s <strong>command-line interface</strong>, or CLI. The following will provide brief </p>
-<h3 id="command-line-interface-cli">Command-line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permanent link">&para;</a></h3>
+<h3 id="the-command-line-interface-cli">The Command-line Interface (CLI)<a class="headerlink" href="#the-command-line-interface-cli" title="Permanent link">&para;</a></h3>
 <h4 id="macos">macOS<a class="headerlink" href="#macos" title="Permanent link">&para;</a></h4>
-<p>On your Mac, do one of the following:</p>
+<p>For users with a Mac, the command-line interface is <strong>Terminal</strong>, which can you can access by doing one of the following:</p>
 <ul>
 <li>
 <p>Click the Launchpad icon in the Dock, type <strong>Terminal</strong> in the search field, then click <strong>Terminal</strong>.</p>
 </li>
 <li>
-<p>In the Finder, open the <strong>/Applications/Utilities</strong> folder, then double-click <strong>Terminal</strong>.     </p>
+<p>In the Finder, open the <strong>/Applications/Utilities</strong> folder, then double-click <strong>Terminal</strong>.</p>
 </li>
 <li>
-<p>Press ‘Command + Space’ </p>
+<p>Press ‘Command + Space’ to open Spotlight Search, type <strong>Terminal</strong> in the search field, then click <strong>Terminal</strong>.</p>
 </li>
 </ul>
 <h4 id="windows-and-pc">Windows and PC:<a class="headerlink" href="#windows-and-pc" title="Permanent link">&para;</a></h4>
+<p>Windows and PC users </p>
 <p>PowerShell and Command Prompt</p>
 <ul>
 <li></li>
@@ -1062,15 +1063,23 @@
 <p>These two lines create a folder, or directory, named my_project. That folder is then set as the current working directory; this directory will become the virtual environment. </p>
 <h3 id="create-input-and-output-folders">Create Input and Output Folders<a class="headerlink" href="#create-input-and-output-folders" title="Permanent link">&para;</a></h3>
 <p><img alt="" src="../img/create_inputoutput.gif" /></p>
-<pre><code> - `mkdir input`
-
- - `mkdir output`
-</code></pre>
+<ul>
+<li>
+<p><code>mkdir input</code></p>
+</li>
+<li>
+<p><code>mkdir output</code></p>
+</li>
+</ul>
 <p>These two lines create:</p>
-<pre><code> - an input folder, where you will download your study’s data dictionary; and
-
- - an output folder, where your generated HEAL-compliant data dictionary will be saved.
-</code></pre>
+<ul>
+<li>
+<p>an input folder, where you will download your study’s data dictionary; and</p>
+</li>
+<li>
+<p>an output folder, where your generated HEAL-compliant data dictionary will be saved.</p>
+</li>
+</ul>
 <h3 id="download-your-studys-data-dictionary">Download Your Study’s Data Dictionary<a class="headerlink" href="#download-your-studys-data-dictionary" title="Permanent link">&para;</a></h3>
 <p>There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:</p>
 <pre><code> 1. data.csv
@@ -1106,7 +1115,7 @@
 <p>Now that the HEAL Data Utilities python package has been successfully installed, it can be used to generate a HEAL-compliant data dictionary. The command <code>vlmd</code> will be used to call the healdata-utils python package. </p>
 <p>To confirm installation and to see the different command options:</p>
 <p><code>vlmd --help</code></p>
-<p><img alt="" src="../imgs/healtdata-utils_options.png/" /></p>
+<p><img alt="" src="../imgs/vlmd_options.png/" /></p>
 <p>Note that the only required flag is <code>--filepath</code>, the path to the file you want to convert to a HEAL data dictionary. </p>
 <p>Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:</p>
 <h4 id="macos-and-linux_1">MacOS and Linux<a class="headerlink" href="#macos-and-linux_1" title="Permanent link">&para;</a></h4>
@@ -1137,6 +1146,8 @@
 <li><code>vlmd --help</code></li>
 <li><code>vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv</code></li>
 </ol>
+<p>input/sprint_2020-12-16.xlsx</p>
+<p>vlmd --filepath ./input/sprint_2020-12-16.redcap.csv --inputtype redcap.csv --outputdir ./output/sprint_2020-12-16-heal-dd.csv</p>
 
 
 
