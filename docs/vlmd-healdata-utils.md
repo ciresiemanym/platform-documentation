@@ -8,22 +8,24 @@ The HEAL Data Utilities is a software package that can be leveraged via a **comm
 
 To get started, you will need to navigate to your computer’s **command-line interface**, or CLI. The following will provide brief 
 
-### Command-line Interface (CLI)
+### The Command-line Interface (CLI)
 
 #### macOS 
 
-On your Mac, do one of the following:
+For users with a Mac, the command-line interface is **Terminal**, which can you can access by doing one of the following:
 
 
 - Click the Launchpad icon in the Dock, type **Terminal** in the search field, then click **Terminal**.
 
 
-- In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.     
+- In the Finder, open the **/Applications/Utilities** folder, then double-click **Terminal**.
 
 
-- Press ‘Command + Space’ 
+- Press ‘Command + Space’ to open Spotlight Search, type **Terminal** in the search field, then click **Terminal**.
 
 #### Windows and PC: 
+
+Windows and PC users 
 
 PowerShell and Command Prompt
 
@@ -55,15 +57,15 @@ These two lines create a folder, or directory, named my_project. That folder is 
 
 ![](../img/create_inputoutput.gif)
 
-     - `mkdir input`
+- `mkdir input`
 
-     - `mkdir output`
+- `mkdir output`
 
 These two lines create:
 
-     - an input folder, where you will download your study’s data dictionary; and
+- an input folder, where you will download your study’s data dictionary; and
 
-     - an output folder, where your generated HEAL-compliant data dictionary will be saved.
+ - an output folder, where your generated HEAL-compliant data dictionary will be saved.
 
 ### Download Your Study’s Data Dictionary
 
@@ -120,7 +122,7 @@ To confirm installation and to see the different command options:
 
 `vlmd --help`
 
-![](../imgs/healtdata-utils_options.png/)
+![](../imgs/vlmd_options.png/)
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
 
@@ -168,3 +170,8 @@ At this point you can deactivate your virtual environment.
 8. `pip install healdata-utils`
 9. `vlmd --help`
 10. `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
+
+
+input/sprint_2020-12-16.xlsx
+
+vlmd --filepath ./input/sprint_2020-12-16.redcap.csv --inputtype redcap.csv --outputdir ./output/sprint_2020-12-16-heal-dd.csv
