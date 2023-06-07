@@ -2,7 +2,7 @@
 
 In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the **HEAL Data Utilities**) to help you make your existing data dictionary HEAL-compliant.
 
-## 1. Getting Started 
+##  Getting Started 
 
 The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
 
@@ -10,13 +10,14 @@ The HEAL Data Utilities is a software package that can be leveraged via a **comm
 
 To get started, you will need to navigate to your computer’s **command-line interface**, or CLI. On macOS, this is known as **Terminal**. For Windows and PC users, your command-line interface may be **PowerShell** or **Command Prompt**. 
 
-Once you have opened the command-line interface, you can now begin following the steps outlined below. 
 
 ### Python
 
 The HEAL Data Utilities is built on Python, a widely used programming language that may   already be installed on your computer.
 
 While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/)
+
+Once you have opened the command-line interface, you can now begin following the steps outlined below. 
 
 ## 2. Set Up a Virtual Environment
 
@@ -105,6 +106,8 @@ To confirm installation and to see the different command options:
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
 
+---
+
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
 
 #### MacOS and Linux
@@ -113,20 +116,15 @@ Execute the following command:
 
 `vlmd --filepath ./input/example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir ./output/heal-vlmd-from-redcap.csv`
 
-In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
-
-Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the `/output/` directory.
-
 #### Windows and PC
 
 Execute the following command: 
 
 `vlmd --filepath .\input\example_redcap_demo.redcap.csv --inputtype redcap.csv --outputdir .\output\heal-vlmd-from-redcap.csv`
 
-In this command, "example_repcap_demo.redcap.csv” is the filename of the data dictionary that was exported from RedCap, “redcap.csv” is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
+In this command, `example_repcap_demo.redcap.csv` is the filename of the data dictionary that was exported from RedCap, `redcap.csv` is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
 
-Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the `/output/` folderdirectory.
-
+Once this command executes, the generated HEAL-compliant data dictionary can be found in the `/output/` folder.
 
 If you do not enter a `--description`, it will produce an error for the JSON format: 
 
