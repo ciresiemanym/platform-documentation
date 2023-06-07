@@ -122,7 +122,6 @@ To confirm installation and to see the different command options:
 
 `vlmd --help`
 
-
 ![](../img/vlmd_options.png/)
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
