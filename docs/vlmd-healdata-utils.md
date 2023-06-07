@@ -2,8 +2,6 @@
 
 In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the **HEAL Data Utilities**) to help you make your existing data dictionary HEAL-compliant.
 
----
-
 ## 1. Getting Started 
 
 The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](./vlmd//temp.md).
@@ -124,7 +122,8 @@ To confirm installation and to see the different command options:
 
 `vlmd --help`
 
-![](../img/vlmd_options.png/)
+
+![](../img/vlmd_options.png)
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
 
