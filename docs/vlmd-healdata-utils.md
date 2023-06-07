@@ -122,6 +122,7 @@ To confirm installation and to see the different command options:
 
 `vlmd --help`
 
+
 ![](../img/vlmd_options.png/)
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL data dictionary. 
@@ -148,13 +149,11 @@ In this command, "example_repcap_demo.redcap.csv” is the filename of the data 
 
 Once this command executes, theI can locate my new, generated HEAL-compliant data dictionary can be located in the `/output/` folderdirectory.
 
+
 If you do not enter a `--description`, it will produce an error for the JSON format: 
 
 `JSON data dictionary not valid, see heal-json-errors.json`
 
-title
-
-At this point you can deactivate your virtual environment. 
 ---
 
 ## Summary of Command Line Prompts
