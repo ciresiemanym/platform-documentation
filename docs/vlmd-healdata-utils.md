@@ -1,6 +1,6 @@
 # How to Generate HEAL-compliant Data Dictionaries
 
-In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the **HEAL Data Utilities**) to help you make your existing data dictionary HEAL-compliant.
+In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the [**HEAL Data Utilities**](https://pypi.org/project/healdata-utils/) to help you make your existing data dictionary HEAL-compliant.
 
 ---
 
@@ -25,7 +25,7 @@ Once you have opened the command-line interface and installed Python, you can no
 We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 !!! info
-     If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol. The following instructions are for those with less familiarity with the CLI and virtual environmeemnts. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, pPlease jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
+     The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
 
 ### Create a Project Folder
 
@@ -132,7 +132,7 @@ In this command, `example_repcap_demo.redcap.csv` is the filename of the data di
 
 Once this command executes, the generated HEAL-compliant data dictionary can be found in the `output/` folder along with error logs.
 
-If you do not enter a `--description`, the toolit will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
+If you do not enter a `--description`, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
 
 `JSON data dictionary not valid, see heal-json-errors.json`
 
