@@ -6,17 +6,17 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 ## 0. Getting Started 
 
-The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. If you already have experience with the command-line interface, please see [our instructions for advanced users](#3-install-the-heal-data-utilities).
+The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. The following instructions will walk you through the process of installing Python, setting up a virtual environment, installing HEAL Data Utilities and using the tool to create a HEAL-compliant data dictionary If you already have Python installed and experience with  setting up a virtual environment, you can skip to  [Step 3. Install the HEAL Data Utilities](#3-install-the-heal-data-utilities).
 
 ### The Command-line Interface (CLI)
 
-To get started, you will need to navigate to your computer’s **command-line interface**, or CLI. On macOS, this is known as **Terminal**. For Windows and PC users, your command-line interface may be **PowerShell** or **Command Prompt**. 
+To get started, you will need to navigate to your computer’s **command-line interface**, or CLI. On macOS, this is known as **Terminal**, and can be opened by pressing Command + Space Bar on your Mac keyboard and searching for “Terminal.” For Windows and PC users, your command-line interface may be **PowerShell** or **Command Prompt**, which can be opened by clicking the Search bar/icon in your Taskbar and searching for “Powershell” or “cmd.”. 
 
 ### Python
 
 The HEAL Data Utilities is built on Python, a widely used programming language that may   already be installed on your computer.
 
-While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/)
+While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/) and install it on your local computer. 
 
 Once you have opened the command-line interface and installed Python, you can now begin following the steps outlined below. 
 
@@ -25,7 +25,7 @@ Once you have opened the command-line interface and installed Python, you can no
 We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 !!! info
-     If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol. The following instructions are for those with less familiarity with the CLI and virtual environemnts. Please jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
+     If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol. The following instructions are for those with less familiarity with the CLI and virtual environmeemnts. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, pPlease jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
 
 ### Create a Project Folder
 
@@ -86,7 +86,7 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 ## 2. Install the HEAL Data Utilities 
 
-Now that you’ve created and activated your virtual environment, you can install the HEAL Data Utilities. 
+Now that you’ve created and activated your virtual environment and saved your study’s data dictionary into the `my_project/input/` folder in the virtual environment, you’re ready to install the HEAL Data Utilities in the virtual environment. 
 
 `pip install healdata-utils`
 
@@ -130,9 +130,9 @@ Execute the following command:
 
 In this command, `example_repcap_demo.redcap.csv` is the filename of the data dictionary that was exported from RedCap, `redcap.csv` is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
 
-Once this command executes, the generated HEAL-compliant data dictionary can be found in the `output/` folder along with error logs
+Once this command executes, the generated HEAL-compliant data dictionary can be found in the `output/` folder along with error logs.
 
-If you do not enter a `--description`, it will produce the following error for the JSON format: 
+If you do not enter a `--description`, the toolit will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
 
 `JSON data dictionary not valid, see heal-json-errors.json`
 
