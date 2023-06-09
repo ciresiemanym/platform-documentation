@@ -6,7 +6,7 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 ## 0. Getting Started 
 
-The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. The following instructions will walk you through the process of installing Python, setting up a virtual environment, installing HEAL Data Utilities and using the tool to create a HEAL-compliant data dictionary If you already have Python installed and experience with  setting up a virtual environment, you can skip to  [Step 3. Install the HEAL Data Utilities](#3-install-the-heal-data-utilities).
+The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. The following instructions will walk you through the process of installing Python, setting up a virtual environment, installing HEAL Data Utilities and using the tool to create a HEAL-compliant data dictionary If you already have Python installed and experience with  setting up a virtual environment, you can skip to  [Step 3. Install the HEAL Data Utilities](/#3-install-the-heal-data-utilities).
 
 ### The Command-line Interface (CLI)
 
@@ -130,7 +130,7 @@ Execute the following command:
 
 In this command, `example_repcap_demo.redcap.csv` is the filename of the data dictionary that was exported from RedCap, `redcap.csv` is the file type of the inputted data dictionary, and heal-vlmd-from-redcap.csv is the filename chosen for the newly created HEAL-compliant data dictionary. 
 
-Once this command executes, the generated HEAL-compliant data dictionary can be found in the `output/` folder along with error logs.
+Once this command executes, the generated HEAL-compliant data dictionary can be found in the `output/` folder along with error logs
 
 If you do not enter a `--description`, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
 
