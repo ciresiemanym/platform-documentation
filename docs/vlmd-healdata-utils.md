@@ -6,7 +6,7 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 ## 0. Getting Started 
 
-The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. The following instructions will walk you through the process of installing Python, setting up a virtual environment, installing HEAL Data Utilities and using the tool to create a HEAL-compliant data dictionary If you already have Python installed and experience with  setting up a virtual environment, you can skip to  [Step 3. Install the HEAL Data Utilities](#3-install-the-heal-data-utilities).
+The HEAL Data Utilities is a software package that can be leveraged via a **command-line interface**. The following instructions will walk you through the process of installing Python, setting up a virtual environment, installing HEAL Data Utilities and using the tool to create a HEAL-compliant data dictionary If you already have Python installed and experience with  setting up a virtual environment, you can skip to  [Step 2. Install the HEAL Data Utilities](#2-install-the-heal-data-utilities).
 
 ### The Command-line Interface (CLI)
 
@@ -16,7 +16,7 @@ To get started, you will need to navigate to your computer’s **command-line in
 
 The HEAL Data Utilities is built on Python, a widely used programming language that may   already be installed on your computer.
 
-While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/) and install it on your local computer. 
+While the HEAL Data Utilities should be compatible with most versions of Python, you can download the latest version of Python [here](https://www.python.org/downloads/) and install it on your local computer. We recommend installing Python version 3.10 or higher. 
 
 Once you have opened the command-line interface and installed Python, you can now begin following the steps outlined below. 
 
@@ -25,7 +25,7 @@ Once you have opened the command-line interface and installed Python, you can no
 We highly recommend installing the HEAL Data Utilities in a virtual environment, since there are several software dependencies that will be installed along with `healdata-utils`. A virtual environment will allow you to successfully install these packages without affecting other software already installed on your computer. The following steps will walk you through this process. You can learn more about creating virtual environments with Python [here](https://docs.python.org/3/library/venv.html).  
 
 !!! info
-     The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the [installation instructions](#3-install-the-heal-data-utilities). 
+     The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the [installation instructions(#2-install-the-heal-data-utilities). 
 
 ### Create a Project Folder
 
