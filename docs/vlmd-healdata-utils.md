@@ -68,7 +68,7 @@ There are many applications and software packages that are commonly used during 
      9. json
      10. redcap.csv 
 
-Export your study’s dataset or data dictionary into the `my_project/input/` folder. If you would like more information on supported file formats, please check out here. 
+Export your study’s dataset or data dictionary into the `my_project/input/` folder. If you would like more information on supported file formats, please check out [here](https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/). 
 
 ### Create Virtual Environment
 
@@ -112,6 +112,13 @@ To confirm installation and to see the different command options:
 
 Note that the only required flag is `--filepath`, the path to the file you want to convert to a HEAL-compliant data dictionary. 
 
+If you do not enter a `--description`, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
+
+`JSON data dictionary not valid, see heal-json-errors.json`
+
+Please note you will have the opportunity to provide a description when you submit the data dictionary to the Platform. 
+
+
 ---
 
 Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:
@@ -133,10 +140,6 @@ Execute the following command:
 In this command, `example_repcap_demo.redcap.csv` is the filename of the data dictionary that was exported from RedCap, `redcap.csv` is the file format, and `heal-vlmd-from-redcap.csv` is the filename chosen for the newly created HEAL-compliant data dictionary.
 
 Once this command executes, the generated HEAL-compliant data dictionary will be saved in the `output/` folder along with error logs. 
-
-If you do not enter a `--description`, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: 
-
-`JSON data dictionary not valid, see heal-json-errors.json`
 
 ---
 
