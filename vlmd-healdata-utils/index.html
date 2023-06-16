@@ -1011,7 +1011,7 @@
  9. json
  10. redcap.csv
 </code></pre>
-<p>Export your study’s dataset or data dictionary into the <code>my_project/input/</code> folder. If you would like more information on supported file formats, please check out here. </p>
+<p>Export your study’s dataset or data dictionary into the <code>my_project/input/</code> folder. If you would like more information on supported file formats, please check out <a href="https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/">here</a>. </p>
 <h3 id="create-virtual-environment">Create Virtual Environment<a class="headerlink" href="#create-virtual-environment" title="Permanent link">&para;</a></h3>
 <ul>
 <li><code>python -m venv venv –upgrade-deps</code></li>
@@ -1035,6 +1035,9 @@
 <p><code>vlmd --help</code></p>
 <p><img alt="" src="../img/vlmd_options.png" /></p>
 <p>Note that the only required flag is <code>--filepath</code>, the path to the file you want to convert to a HEAL-compliant data dictionary. </p>
+<p>If you do not enter a <code>--description</code>, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: </p>
+<p><code>JSON data dictionary not valid, see heal-json-errors.json</code></p>
+<p>Please note you will have the opportunity to provide a description when you submit the data dictionary to the Platform. </p>
 <hr />
 <p>Here is how you would generate a HEAL Data Dictionary with a data dictionary downloaded from RedCap:</p>
 <h4 id="macos-and-linux_1">MacOS and Linux<a class="headerlink" href="#macos-and-linux_1" title="Permanent link">&para;</a></h4>
@@ -1046,8 +1049,6 @@
 <hr />
 <p>In this command, <code>example_repcap_demo.redcap.csv</code> is the filename of the data dictionary that was exported from RedCap, <code>redcap.csv</code> is the file format, and <code>heal-vlmd-from-redcap.csv</code> is the filename chosen for the newly created HEAL-compliant data dictionary.</p>
 <p>Once this command executes, the generated HEAL-compliant data dictionary will be saved in the <code>output/</code> folder along with error logs. </p>
-<p>If you do not enter a <code>--description</code>, the tool will successfully generate a HEAL-compliant data dictionary, but it will produce the following error for the JSON format: </p>
-<p><code>JSON data dictionary not valid, see heal-json-errors.json</code></p>
 <hr />
 <h2 id="summary-of-command-line-prompts">Summary of Command Line Prompts<a class="headerlink" href="#summary-of-command-line-prompts" title="Permanent link">&para;</a></h2>
 <p>The following is a collection of prompts used in the above instructions. </p>
