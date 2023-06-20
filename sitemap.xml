@@ -76,11 +76,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://heal-docs-dev.io/vlmd_submission/</loc>
-         <lastmod>2023-06-20</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://heal-docs-dev.io/study-registration/</loc>
          <lastmod>2023-06-20</lastmod>
          <changefreq>daily</changefreq>
@@ -102,6 +97,11 @@
     </url>
     <url>
          <loc>https://heal-docs-dev.io/vlmd/vlmd_request_access/</loc>
+         <lastmod>2023-06-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/vlmd/vlmd_submission/</loc>
          <lastmod>2023-06-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
