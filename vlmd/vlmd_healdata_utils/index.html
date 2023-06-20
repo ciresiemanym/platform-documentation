@@ -15,7 +15,7 @@
     
     
       
-        <title>How to Generate HEAL-compliant Data Dictionaries - HEAL Platform Documentation</title>
+        <title>How to Generate HEAL-compliant Data Dictionaries (Beta Testing) - HEAL Platform Documentation</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-generate-heal-compliant-data-dictionaries" class="md-skip">
+        <a href="#how-to-generate-heal-compliant-data-dictionaries-beta-testing" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to Generate HEAL-compliant Data Dictionaries
+              How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
             
           </span>
         </div>
@@ -381,12 +381,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          How to Generate HEAL-compliant Data Dictionaries
+          How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        How to Generate HEAL-compliant Data Dictionaries
+        How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
       </a>
       
         
@@ -442,13 +442,6 @@
           <li class="md-nav__item">
   <a href="#create-a-project-folder" class="md-nav__link">
     Create a Project Folder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-input-and-output-folders" class="md-nav__link">
-    Create Input and Output Folders
   </a>
   
 </li>
@@ -911,13 +904,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-input-and-output-folders" class="md-nav__link">
-    Create Input and Output Folders
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#export-your-studys-dataset-or-data-dictionary" class="md-nav__link">
     Export Your Study’s Dataset or Data Dictionary
   </a>
@@ -1019,8 +1005,8 @@
                   
 
 
-<h1 id="how-to-generate-heal-compliant-data-dictionaries">How to Generate HEAL-compliant Data Dictionaries<a class="headerlink" href="#how-to-generate-heal-compliant-data-dictionaries" title="Permanent link">&para;</a></h1>
-<p>In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL <a href="https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema">variable-level metadata schema</a>. The following instructions will demonstrate how to use a tool we’ve created (called the <a href="https://pypi.org/project/healdata-utils/"><strong>HEAL Data Utilities</strong></a>) to help you infer a HEAL-compliant data dictionary from your dataset or existing data dictionary.</p>
+<h1 id="how-to-generate-heal-compliant-data-dictionaries-beta-testing">How to Generate HEAL-compliant Data Dictionaries (Beta Testing)<a class="headerlink" href="#how-to-generate-heal-compliant-data-dictionaries-beta-testing" title="Permanent link">&para;</a></h1>
+<p>In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL <a href="https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema">variable-level metadata schema</a>. The following instructions will demonstrate how to use a tool called the <a href="https://pypi.org/project/healdata-utils/"><strong>HEAL Data Utilities</strong></a> to help you generate a HEAL-compliant data dictionary from your dataset or existing data dictionary.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the <a href="#2-install-the-heal-data-utilities">installation instructions</a>. </p>
@@ -1047,25 +1033,6 @@
 </li>
 </ul>
 <p>These two lines make a directory, or folder, named my_project. That folder is then set as the current working directory; this folder will become the virtual environment. </p>
-<h3 id="create-input-and-output-folders">Create Input and Output Folders<a class="headerlink" href="#create-input-and-output-folders" title="Permanent link">&para;</a></h3>
-<p><img alt="" src="../../img/create_inputoutput.gif" /></p>
-<ul>
-<li>
-<p><code>mkdir input</code></p>
-</li>
-<li>
-<p><code>mkdir output</code></p>
-</li>
-</ul>
-<p>These two lines create:</p>
-<ul>
-<li>
-<p>an input folder, where you will put your study’s dataset or existing data dictionary; and</p>
-</li>
-<li>
-<p>an output folder, where your generated HEAL-compliant data dictionary will be saved.</p>
-</li>
-</ul>
 <h3 id="export-your-studys-dataset-or-data-dictionary">Export Your Study’s Dataset or Data Dictionary<a class="headerlink" href="#export-your-studys-dataset-or-data-dictionary" title="Permanent link">&para;</a></h3>
 <p>There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:</p>
 <pre><code> 1. data.csv
@@ -1079,11 +1046,12 @@
  9. json
  10. redcap.csv
 </code></pre>
-<p>Export your study’s dataset or data dictionary into the <code>my_project/input/</code> folder. If you would like more information on supported file formats, please check out <a href="https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/">here</a>. </p>
+<p>Export your study’s dataset or data dictionary into the <code>my_project/</code> folder. If you would like more information on supported file formats, please check out <a href="https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/">here</a>. </p>
 <h3 id="create-virtual-environment">Create Virtual Environment<a class="headerlink" href="#create-virtual-environment" title="Permanent link">&para;</a></h3>
 <ul>
-<li><code>python -m venv venv –upgrade-deps</code></li>
+<li><code>python -m venv myenv –upgrade-deps</code></li>
 </ul>
+<p>This line is calling the module <code>-m</code> in Python for virtual environments <code>venv</code> and naming it <code>myenv</code>. </p>
 <h3 id="activate-virtual-environment">Activate Virtual Environment<a class="headerlink" href="#activate-virtual-environment" title="Permanent link">&para;</a></h3>
 <h4 id="macos-and-linux">MacOS and Linux<a class="headerlink" href="#macos-and-linux" title="Permanent link">&para;</a></h4>
 <p><code>source venv/bin/activate</code></p>
@@ -1092,7 +1060,7 @@
 <p>If you would like to deactivate your virtual environment at any time, use the command <code>deactivate</code>.</p>
 <h2 id="2-install-the-heal-data-utilities">2. Install the HEAL Data Utilities<a class="headerlink" href="#2-install-the-heal-data-utilities" title="Permanent link">&para;</a></h2>
 <p>Now that you’ve created and activated your virtual environment and saved your study’s dataset or data dictionary into the <code>my_project/input/</code> folder in the virtual environment, you’re ready to install the HEAL Data Utilities in the virtual environment. </p>
-<p><code>pip install healdata-utils</code></p>
+<p><code>pip install healdata-utils --pre</code></p>
 <p>Next, to check that the HEAL Data Utilities package was installed in the virtual environment rather than your local computer, do the following:</p>
 <p><code>which vlmd</code></p>
 <p>The installation path should look like something like this:</p>
