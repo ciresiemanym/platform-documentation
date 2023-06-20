@@ -1,6 +1,6 @@
-# How to Generate HEAL-compliant Data Dictionaries
+# How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
 
-In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool we’ve created (called the [**HEAL Data Utilities**](https://pypi.org/project/healdata-utils/)) to help you infer a HEAL-compliant data dictionary from your dataset or existing data dictionary.
+In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool called the [**HEAL Data Utilities**](https://pypi.org/project/healdata-utils/) to help you generate a HEAL-compliant data dictionary from your dataset or existing data dictionary.
 
 
 !!! info
@@ -39,20 +39,6 @@ We highly recommend installing the HEAL Data Utilities in a virtual environment,
 
 These two lines make a directory, or folder, named my_project. That folder is then set as the current working directory; this folder will become the virtual environment. 
 
-### Create Input and Output Folders
-
-![](../img/create_inputoutput.gif)
-
-- `mkdir input`
-
-- `mkdir output`
-
-These two lines create:
-
-- an input folder, where you will put your study’s dataset or existing data dictionary; and
-
- - an output folder, where your generated HEAL-compliant data dictionary will be saved.
-
 ### Export Your Study’s Dataset or Data Dictionary
 
 There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
@@ -68,11 +54,13 @@ There are many applications and software packages that are commonly used during 
      9. json
      10. redcap.csv 
 
-Export your study’s dataset or data dictionary into the `my_project/input/` folder. If you would like more information on supported file formats, please check out [here](https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/). 
+Export your study’s dataset or data dictionary into the `my_project/` folder. If you would like more information on supported file formats, please check out [here](https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/). 
 
 ### Create Virtual Environment
 
-- `python -m venv venv –upgrade-deps`
+- `python -m venv myenv –upgrade-deps`
+
+This line is calling the module `-m` in Python for virtual environments `venv` and naming it `myenv`. 
 
 ### Activate Virtual Environment
 
@@ -90,7 +78,7 @@ If you would like to deactivate your virtual environment at any time, use the co
 
 Now that you’ve created and activated your virtual environment and saved your study’s dataset or data dictionary into the `my_project/input/` folder in the virtual environment, you’re ready to install the HEAL Data Utilities in the virtual environment. 
 
-`pip install healdata-utils`
+`pip install healdata-utils --pre`
 
 Next, to check that the HEAL Data Utilities package was installed in the virtual environment rather than your local computer, do the following:
 
