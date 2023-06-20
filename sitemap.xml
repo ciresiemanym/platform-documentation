@@ -91,6 +91,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://heal-docs-dev.io/vlmd/</loc>
+         <lastmod>2023-06-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://heal-docs-dev.io/vlmd/vlmd_healdata_utils/</loc>
          <lastmod>2023-06-20</lastmod>
          <changefreq>daily</changefreq>
