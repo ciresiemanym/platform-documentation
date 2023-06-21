@@ -1,6 +1,10 @@
 # Request Access to Submit a Data Dictionary
 
-Need something here
+!!! info
+
+     These instructions will show you how to request access to submit a data dictionary to the Platform. 
+
+     If you were the team member to register your study, please skip to our instructions on how to submit a data dictionary to the Platform: [Submit a Data Dictionary](vlmd_submission.md)
 
 ## Step 1: Login to the HEAL Data Platform
 
@@ -30,6 +34,4 @@ wish to request access to register.
 
 After submitting, you will receive an email indicating the status of your
 request within one business day. When approved, you will then be able to
-[submit a data dictionary](vlmd_submission.md).
-
-
+[register your study](registering-your-study.md).
