@@ -4,9 +4,9 @@ Data Dictionaries, which contain variable-level metadata, describe each variable
 
 !!! info
 
-    Data dictionaries must conform to the HEAL variable level metadata schema. 
+    Data dictionaries must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). 
     
-    Submissions should not include data of any kind. Submissions containing data will be removed from the Platform.
+    Additionally, submissions should not include data of any kind. Submissions containing data will be removed from the Platform.
    
     More information and submission templates can be found [here](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata).
 
@@ -16,11 +16,19 @@ Data Dictionaries, which contain variable-level metadata, describe each variable
 
 ## Find Your Study
 
-From the [Discovery Page](https://healdata.org/portal/discovery), find the study for which you wish to submit a data dictionary.  
-*Please note that at this time only the individual who registered the study is able to submit a data dictionary for that study. Please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io) if you wish to submit a data dictionary but did not register the study yourself.*
+From the [Discovery Page](https://healdata.org/portal/discovery), find the study for which you wish to submit a data dictionary. _If you were not the member of your team to register the study, you will first need to [request access to submit a data dictionary](vlmd_request_access.md)._
 
 - Click on the study to open the Study Page 
 - At the top of the Study Page, select `‘Submit a Data Dictionary’` to navigate to the **Data Dictionary Submission Form**.
+
+!!! info
+
+    A study must be registered in order to submit a data dictionary. 
+
+     If you have not registered your study, please see our instructions on [study registration](../study-registration/)
+
+     If your study was registered by another team member, please see our instructions on [requesting access to submit a data dictionary](). 
+
 
 ## Complete the Data Dictionary Submission Form
 
@@ -52,3 +60,5 @@ Upon receipt of your successful submission, HEAL Data Platform staff will:
 More information about the HEAL variable-level metadata schema, as well as submission templates, can be found [here](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata).
 
 If you have issues with a submission, or have a general inquiry, please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io).
+
+
