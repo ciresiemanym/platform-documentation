@@ -1,8 +1,5 @@
 # How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
 
-In order to submit a study’s data dictionary to the Platform, the data dictionary must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). The following instructions will demonstrate how to use a tool called the [**HEAL Data Utilities**](https://pypi.org/project/healdata-utils/) to help you generate a HEAL-compliant data dictionary from your dataset or existing data dictionary.
-
-
 !!! info
      The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the [installation instructions](#2-install-the-heal-data-utilities). 
 
