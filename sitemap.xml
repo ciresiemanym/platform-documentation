@@ -115,4 +115,19 @@
          <lastmod>2023-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/</loc>
+         <lastmod>2023-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/csv-fields/</loc>
+         <lastmod>2023-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/json-fields/</loc>
+         <lastmod>2023-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
