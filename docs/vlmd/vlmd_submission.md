@@ -1,10 +1,10 @@
 # Submitting a Data Dictionary
 
-Data Dictionaries, which contain variable-level metadata, describe each variable within a dataset. Examples of variable-level attributes include the variable name, description (or variable label), type, format, terminology, source, and derivation.
-
 !!! info
 
-    Data dictionaries must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). 
+    Data dictionaries must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). Please view our instructions on how to generate a HEAL-compliant data dictionary if you have not yet done so. 
+    
+    <p align="center">[Generate a HEAL-compliant Data Dictionary](vlmd_healdata_utils.md){ .md-button }</p>
     
     Additionally, submissions should not include data of any kind. Submissions containing data will be removed from the Platform.
    
