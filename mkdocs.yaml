@@ -16,6 +16,8 @@ nav:
     - vlmd/vlmd_healdata_utils.md
     - vlmd/vlmd_request_access.md
     - vlmd/vlmd_submission.md
+    - Resources:
+      - vlmd/resources/supported_input_formats.md
   - Workspace Registration: heal_workspace_registration.md
   - Data and Repositories:
     - Types of Hosted Data: hosted_data_types.md
