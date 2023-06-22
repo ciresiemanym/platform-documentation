@@ -110,4 +110,9 @@
          <lastmod>2023-06-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://heal-docs-dev.io/vlmd/resources/vlmd_supported_inputs/</loc>
+         <lastmod>2023-06-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
