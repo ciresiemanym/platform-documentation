@@ -1,4 +1,4 @@
-# How to Generate HEAL-compliant Data Dictionaries (Beta Testing)
+# Generate a HEAL-compliant Data Dictionary (Beta Testing)
 
 !!! info
      The following instructions are for those with less familiarity with the CLI and virtual environments. If you are already proficient in setting up virtual environments, we recommend that you follow your usual protocol, please jump ahead to the [installation instructions](#2-install-the-heal-data-utilities). 
