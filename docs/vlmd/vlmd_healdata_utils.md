@@ -51,7 +51,7 @@ There are many applications and software packages that are commonly used during 
      9. json
      10. redcap.csv 
 
-Export your study’s dataset or data dictionary into the `my_project/` folder. If you would like more information on supported file formats, please check out [here](https://norc-heal.github.io/healdata-utils/vlmd/supported_input_formats/). 
+Export your study’s dataset or data dictionary into the `my_project/` folder. If you would like more information on supported file formats, please see our section on [supported input formats](resources/supported_input_formats.md). 
 
 ### Create Virtual Environment
 
