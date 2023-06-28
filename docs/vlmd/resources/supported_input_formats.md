@@ -1,10 +1,24 @@
 # Supported Input Formats
 
-In this section, supported formats for generating heal-compliant data dictionaries are listed. We also provide additional instructions on how to get the necessary input files format/software.
+The HEAL Data Utilities accommodates ten different input file formats, which include:
+
+     1. data.csv
+     2. template.csv
+     3. [csv](#csv-datasets)
+     4. [sav](#spss-sav-files)
+     5. [dta](#stata-dta-files)
+     6. por
+     7. (sas7bdat](#sas-sas7bdat-and-sas7bcat-files)
+     8. template.json
+     9. json
+     10. [redcap.csv](#redcap-data-dictionary-csv-export)
+
+In this section, we provide additional information on formats supported by the HEAL Data Utilities. Additional instructions on how to get the necessary input file format/software are provided as well. 
 
 !!! note
     To further annotate your outputted data dictionaries, see the variable level metadata field properties (with examples) for either the __`csv data dictionary`__ [click here](rendered-schemas/csv-fields.md) and for the __`json data dictionary`__ [click here](rendered-schemas/json-fields.md)
 
+---
 
 ### `csv` Datasets
 
