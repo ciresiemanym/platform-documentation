@@ -8,7 +8,7 @@ The HEAL Data Utilities accommodates ten different input file formats, which inc
 4. [sav](#spss-sav-files)
 5. [dta](#stata-dta-files)
 6. por
-7. (sas7bdat](#sas-sas7bdat-and-sas7bcat-files)
+7. [sas7bdat](#sas-sas7bdat-and-sas7bcat-files)
 8. template.json
 9. json
 10. [redcap.csv](#redcap-data-dictionary-csv-export)
