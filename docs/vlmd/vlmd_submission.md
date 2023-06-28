@@ -4,7 +4,9 @@
 
      These instructions will show you how to request access to submit a data dictionary to the Platform. 
 
-     If you were the team member to register your study, please skip to our instructions on how to submit a data dictionary to the Platform: [Submit a Data Dictionary](#submit-a-data-dictionary_1)
+     If you were the team member to register your study, please skip to our instructions on how to submit a data dictionary to the Platform. 
+     
+     <p align="center">[Submit a Data Dictionary](#submit-a-data-dictionary_1){ .md-button }</p>
 
 ## Request Access to Submit a Data Dictionary
 
