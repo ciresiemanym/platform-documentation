@@ -6,10 +6,6 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 
 1. [How to Generate a HEAL-compliant Data Dictionary](https://norc-heal.github.io/healdata-utils/vlmd) 
 
-<!-- This will be changed to https://heal.github.io/healdata-utils/vlmd/
-once ported to HEAL org. -->
-
-
 2. [How to Submit a HEAL-compliant Data Dictionary](#submit-a-data-dictionary)
 
 !!! info 
