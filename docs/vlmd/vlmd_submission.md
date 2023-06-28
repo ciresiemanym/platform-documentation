@@ -1,5 +1,11 @@
 # Submit a Data Dictionary
 
+In order to submit a HEAL-compliant data dictionary and have it BLANK with your study on the HEAL Data Platform, that study must first be registered. If you have not already registered your study, please see our instructions on [study registration](study-registration/index.md).
+
+If you were the team member to register your study, please skip ahead to our instructions on how to [submit a data dictionary to the Platform](#submit-a-data-dictionary_1). 
+
+If your study was registered by another team member, you will first need to request access to submit a data dictionary. Please follow the instructions below. 
+<!--
 !!! info
 
      These instructions will show you how to request access to submit a data dictionary to the Platform. 
@@ -7,6 +13,7 @@
      If you were the team member to register your study, please skip to our instructions on how to submit a data dictionary to the Platform. 
      
      <p align="center">[Submit a Data Dictionary](#submit-a-data-dictionary_1){ .md-button }</p>
+-->
 
 ## Request Access to Submit a Data Dictionary
 
@@ -102,4 +109,6 @@ Upon receipt of your successful submission, HEAL Data Platform staff will:
 More information about the HEAL variable-level metadata schema, as well as submission templates, can be found [here](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata).
 
 If you have issues with a submission, or have a general inquiry, please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io).
+
+
 
