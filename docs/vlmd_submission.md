@@ -10,7 +10,7 @@ In order to submit a study’s data dictionary to the Platform, the data diction
 once ported to HEAL org. -->
 
 
-2. [How to Submit a HEAL-compliant Data Dictionary](vlmd_submission.md)
+2. [How to Submit a HEAL-compliant Data Dictionary](#submit-a-data-dictionary)
 
 !!! info 
 
@@ -85,7 +85,7 @@ request within one business day. When approved, you will then be able to submit 
 
 ### Find Your Study
 
-From the [Discovery Page](https://healdata.org/portal/discovery), find the study for which you wish to submit a data dictionary. _If you were not the member of your team to register the study, you will first need to [request access to submit a data dictionary](vlmd_request_access.md)._
+From the [Discovery Page](https://healdata.org/portal/discovery), find the study for which you wish to submit a data dictionary. _If you were not the member of your team to register the study, you will first need to [request access to submit a data dictionary](#request-access-to-submit-a-data-dictionary)._
 
 - Click on the study to open the Study Page 
 - At the top of the Study Page, select `‘Submit a Data Dictionary’` to navigate to the **Data Dictionary Submission Form**.
