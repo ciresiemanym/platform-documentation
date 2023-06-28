@@ -15,6 +15,8 @@ If your study was registered by another team member, you will first need to requ
      <p align="center">[Submit a Data Dictionary](#submit-a-data-dictionary_1){ .md-button }</p>
 -->
 
+---
+
 ## Request Access to Submit a Data Dictionary
 
 ### Step 1: Login to the HEAL Data Platform
