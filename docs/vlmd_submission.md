@@ -18,11 +18,11 @@ once ported to HEAL org. -->
      
      If you have not done so, please see our instructions on how to register your study. 
      
-     <p align="center">[How to Register Your Study](../study-registration/index.md){ .md-button }</p>
+     <p align="center">[How to Register Your Study](study-registration/index.md){ .md-button }</p>
 
 In order to submit a HEAL-compliant data dictionary and have it BLANK with your study on the HEAL Data Platform, that study must first be registered. If you have not already registered your study, please see our instructions on [study registration](study-registration/index.md).
 
-If you were the team member to register your study, please skip ahead to our instructions on how to [submit a data dictionary to the Platform](#submit-a-data-dictionary_1). 
+If you were the team member to register your study, please skip ahead to our instructions on how to [submit a data dictionary to the Platform](#submit-a-data-dictionary). 
 
 If your study was registered by another team member, you will first need to request access to submit a data dictionary. Please follow the instructions below. 
 <!--
@@ -39,8 +39,8 @@ If your study was registered by another team member, you will first need to requ
 
 ### Step 1: Login to the HEAL Data Platform
 
-<!-- If you want to play with sizing, you can use something like ![](../img/heal_login.png){: style="height:250px;width:534px"} -->
-![](../img/heal_login.png)
+<!-- If you want to play with sizing, you can use something like ![](img/heal_login.png){: style="height:250px;width:534px"} -->
+![](img/heal_login.png)
 
 
 ### Step 2: Find your study
@@ -52,7 +52,7 @@ wish to request access to register.
 - At the top of the Study Page, select `Request Access to Submit a Data Dictionary`
   to navigate to the Study Registration Access Request form.
 
-![](../img/submit_dd_req_access_button.png)
+![](img/submit_dd_req_access_button.png)
 
 
 ### Step 3: Complete the Data Dictionary Submission Request Form
@@ -61,7 +61,7 @@ wish to request access to register.
 - You will need to provide your name, your email address, institutional
   affiliation and role on the project/study.
 
-![](../img/submit_dd_request_form.png)
+![](img/submit_dd_request_form.png)
 
 After submitting, you will receive an email indicating the status of your
 request within one business day. When approved, you will then be able to submit a data dictionary to the Platform.
@@ -73,7 +73,7 @@ request within one business day. When approved, you will then be able to submit 
 
     Data dictionaries must conform to the HEAL [variable-level metadata schema](https://github.com/HEAL/heal-metadata-schemas/tree/variable-level-metadata/variable-level-metadata-schema). Please view our instructions on how to generate a HEAL-compliant data dictionary if you have not yet done so. 
     
-    <p align="center">[Generate a HEAL-compliant Data Dictionary](vlmd_healdata_utils.md){ .md-button }</p>
+    <p align="center">[Generate a HEAL-compliant Data Dictionary](https://norc-heal.github.io/healdata-utils/vlmd){ .md-button }</p>
     
     Additionally, submissions should not include data of any kind. Submissions containing data will be removed from the Platform.
    
@@ -81,7 +81,7 @@ request within one business day. When approved, you will then be able to submit 
 
 ### Login to the HEAL Data Platform 
 
-![](../img/heal_login.png)
+![](img/heal_login.png)
 
 ### Find Your Study
 
@@ -94,14 +94,14 @@ From the [Discovery Page](https://healdata.org/portal/discovery), find the study
 
     A study must be registered in order to submit a data dictionary. 
 
-     If you have not registered your study, please see our instructions on [study registration](../study-registration/)
+     If you have not registered your study, please see our instructions on [study registration](study-registration/)
 
      If your study was registered by another team member, please see our instructions on [requesting access to submit a data dictionary](). 
 
 
 ### Complete the Data Dictionary Submission Form
 
-   ![](../img/vlmd_submission_form.png)
+   ![](img/vlmd_submission_form.png)
 
 - The `Study` field will already be filled in
 - Choose the `Select File` button to browse your local computer for your data dictionary.
