@@ -22,24 +22,53 @@ Double-clicking `vlmd` will open your computer's command-line interface. On macO
 
 ![](../img/vlmd_interface.gif)
 
-`documentation` : Launch the vlmd data dictionary definitions in the documentation
+#### `documentation` : Launch the vlmd data dictionary definitions in the documentation
 
-`extract`: Extract the variable level metadata from an existing file with a specific
+#### `extract`: Extract the variable level metadata from an existing file with a specific
   type/format
 
-`start`: Start a data dictionary from an empty template
+#### `start`: Start a data dictionary from an empty template
 
-`validate`: Check (validate) an existing HEAL data dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
+#### `validate`: Check (validate) an existing HEAL data dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
 
 ---
 
-## Using the VLMD Tool in HEAL Workspaces 
+## Using the VLMD Tool in HEAL Workspaces with Python
 
-For users who are interested in or curious about HEAL Workspaces, they now have the opportunity to use it in real time (i don’t like this sentence). Users will first have to request access to use a HEAL Workspace. Instructions requesting access to HEAL Workspaces can be found [here] (./heal_workspace_registration.md).
+This tool can also be used in HEAL Workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here] (./heal_workspace_registration.md).
 
-Once you’ve been approved to use HEAL Workspaces, you can select the [whichever is the appropriate workspace image] 
+Once access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in [HEAL Workspaces](https://healdata.org/portal/workspace).  
 
-<!--- [ picture of the heal workspace with VLMD tool installed — is it all of them? ]--->
+![](../img/generic_workspace_image.png)
+
+After you’ve launched the workspace, you can import the necessary functions:. 
+
+### `extract`:
+```python
+
+from healdata_utils import convert_to_vlmd
+
+convert_to_vlmd(input_filepath="myproject/myfile.sav",inputtype="spss")
+
+```
+### `start`: 
+```python
+
+from healdata_utils import write_vlmd_template
+
+write_vlmd_template(tmpdir.joinpath("heal.csv"),numfields=10)
+    
+```
+### `validate`: 
+```python
+
+from healdata_utils import validate_vlmd_csv,validate_vlmd_json
+
+validate_vlmd_csv("data/myhealcsvdd.csv")
+
+validate_vlmd_json("data/myhealjsondd.json")
+
+```
 
 Please note, using the VLMD Tool in HEAL Workspaces is only recommended for users who have input data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment. 
 
