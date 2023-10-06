@@ -3,8 +3,8 @@
 The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a **command-line interface** (CLI) and HEAL Workspaces, but can also be incorporated into existing pipelines. 
 
 !!! info
-  The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for any requirements and more information.
 
+    The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is  recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for any requirements and more information.
 
 ---
 
@@ -33,9 +33,9 @@ Double-clicking `vlmd` will open your computer's command-line interface. On macO
 
 ---
 
-## Useing the VLMD Tool in HEAL Workspaces 
+## Using the VLMD Tool in HEAL Workspaces 
 
-For users who are interested in or curious about HEAL Workspaces, they now have the opportunity to use it in real time (i don’t like this sentence). Users will first have to request access to use a HEAL Workspace. Instructions can be found here (https://heal.github.io/platform-documentation/heal_workspace_registration/) 
+For users who are interested in or curious about HEAL Workspaces, they now have the opportunity to use it in real time (i don’t like this sentence). Users will first have to request access to use a HEAL Workspace. Instructions requesting access to HEAL Workspaces can be found [here] (./heal_workspace_registration.md).
 
 Once you’ve been approved to use HEAL Workspaces, you can select the [whichever is the appropriate workspace image] 
 
