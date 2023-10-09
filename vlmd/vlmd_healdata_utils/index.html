@@ -1002,11 +1002,22 @@
 
 
 <h1 id="generate-a-heal-compliant-data-dictionary-beta-testing">Generate a HEAL-compliant Data Dictionary (Beta Testing)<a class="headerlink" href="#generate-a-heal-compliant-data-dictionary-beta-testing" title="Permanent link">&para;</a></h1>
-<p>The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, but can also be incorporated into existing pipelines. </p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on <a href="https://github.com/heal/healdata-utils">GitHub</a> or <a href="https://pypi.org/project/healdata-utils/">PyPi</a> for any requirements and more information.</p>
+<p>The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on <a href="https://github.com/heal/healdata-utils">GitHub</a> or <a href="https://pypi.org/project/healdata-utils/">PyPi</a> for more information.</p>
 </div>
+<p>The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. </p>
+<p>There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:</p>
+<ul>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdata">CSV datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdd">CSV (minimal) data dictionary</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/spss">SPSS datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/sas">SAS datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/stata">Stata datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv">REDCap data dictionary</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema">Frictionless Table Schema</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/exceldata">Excel dataset</a></li>
+</ul>
 <hr />
 <h2 id="using-the-stand-alone-vlmd-tool">Using the Stand-alone VLMD Tool<a class="headerlink" href="#using-the-stand-alone-vlmd-tool" title="Permanent link">&para;</a></h2>
 <p>In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool from the NIH HEAL Initiative’s GitHub repository here: https://github.com/HEAL/healdata-utils/releases/latest</p>
@@ -1023,17 +1034,17 @@
 <p>Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Typing the <code>documentation</code> will launch the VLMD Data Dictionary definitions in the <a href="https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions">HEAL Data Utilities documentation</a>.</p>
 </div>
+<p>Typing the <code>documentation</code> will launch the VLMD Data Dictionary definitions in the <a href="https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions">HEAL Data Utilities documentation</a>.</p>
 <h2 id="using-the-vlmd-tool-in-heal-workspaces-with-python">Using the VLMD Tool in HEAL Workspaces with Python<a class="headerlink" href="#using-the-vlmd-tool-in-heal-workspaces-with-python" title="Permanent link">&para;</a></h2>
 <p>This tool can also be used in HEAL Workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here] (./heal_workspace_registration.md).</p>
-<p>Once access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in <a href="https://healdata.org/portal/workspace">HEAL Workspaces</a>.  </p>
+<p>Once workspace access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in <a href="https://healdata.org/portal/workspace">HEAL Workspaces</a>.  </p>
 <p><img alt="" src="../../img/generic_workspace_image.png" /></p>
-<p>After you’ve launched the workspace, you can import the necessary functions:. </p>
+<p>After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. </p>
 <h4 id="extract_1">extract<a class="headerlink" href="#extract_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">healdata_utils</span> <span class="kn">import</span> <span class="n">convert_to_vlmd</span>
 
-<span class="n">convert_to_vlmd</span><span class="p">(</span><span class="n">input_filepath</span><span class="o">=</span><span class="s2">&quot;myproject/myfile.sav&quot;</span><span class="p">,</span><span class="n">inputtype</span><span class="o">=</span><span class="s2">&quot;spss&quot;</span><span class="p">)</span>
+<span class="n">convert_to_vlmd</span><span class="p">(</span><span class="n">input_filepath</span><span class="o">=</span><span class="s2">&quot;/pd/myproject/myfile.sav&quot;</span><span class="p">,</span><span class="n">inputtype</span><span class="o">=</span><span class="s2">&quot;spss&quot;</span><span class="p">)</span>
 </code></pre></div>
 <h4 id="start_1">start<a class="headerlink" href="#start_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">healdata_utils</span> <span class="kn">import</span> <span class="n">write_vlmd_template</span>
