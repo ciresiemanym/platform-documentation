@@ -17,13 +17,14 @@ There are many applications and software packages that are commonly used during 
 - [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema)
 - [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata)
 
+Please follow the links above to learn more. 
 ---
 
 ## Using the Stand-alone VLMD Tool
 
 In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool from the NIH HEAL Initiative’s GitHub repository here: [https://github.com/HEAL/healdata-utils/releases/latest](https://github.com/HEAL/healdata-utils/releases/latest)
 
-Please select and download the version that matches your operating system. If your computer is running MacOS, you should select ‘healdata-utils-mac.zip’; for Windows, ‘healdata-utils-windows.zip’; for Linux, ‘healdata-utils-linux.zip’.
+Please select and download the version that matches your operating system. If your computer is running **MacOS**, you should select ‘healdata-utils-mac.zip’; for **Windows**, ‘healdata-utils-windows.zip’; for **Linux**, ‘healdata-utils-linux.zip’.
 
 Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system. 
 
