@@ -21,7 +21,7 @@ There are many applications and software packages that are commonly used during 
 
 ## Using the Stand-alone VLMD Tool
 
-In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository here: https://github.com/HEAL/healdata-utils/releases/latest
+In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository here: [https://github.com/HEAL/healdata-utils/releases/latest](https://github.com/HEAL/healdata-utils/releases/latest)
 
 Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system.
 
@@ -31,14 +31,16 @@ Double-clicking `vlmd` will open your computer's command-line interface. On macO
 
 ![](../img/vlmd_interface.gif)
 
-#### extract
-    > Extract the variable level metadata from an existing file with a specific type/format
+### Executable Commands
 
-#### start
-    > Start a data dictionary from an empty template
+#### extract  
+Extract the variable level metadata from an existing file with a specific type/format
 
-#### validate 
-    > Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
+#### start  
+Start a data dictionary from an empty template
+
+#### validate  
+Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
 
 !!! info
 
@@ -55,6 +57,8 @@ Once workspace access has been approved, select the (Generic) Jupyter Lab Notebo
 ![](../img/generic_workspace_image.png)
 
 After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. 
+
+### Python Functions
 
 #### extract
 ```python
@@ -84,3 +88,6 @@ validate_vlmd_json("data/myhealjsondd.json")
 ```
 
 Please note, using the VLMD Tool in HEAL workspaces is only recommended for users who have input data dictionary, rather than their entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment. 
+
+
+## Output
