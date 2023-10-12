@@ -21,7 +21,7 @@ There are many applications and software packages that are commonly used during 
 
 ## Using the Stand-alone VLMD Tool
 
-In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool from the NIH HEAL Initiative’s GitHub repository here: https://github.com/HEAL/healdata-utils/releases/latest
+In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool from the NIH HEAL Initiative’s GitHub repository here: [https://github.com/HEAL/healdata-utils/releases/latest](https://github.com/HEAL/healdata-utils/releases/latest)
 
 Please select and download the version that matches your operating system. If your computer is running MacOS, you should select ‘healdata-utils-mac.zip’; for Windows, ‘healdata-utils-windows.zip’; for Linux, ‘healdata-utils-linux.zip’.
 
@@ -46,9 +46,11 @@ Check (validate) an existing HEAL Data Dictionary file to see if it follows the 
 
 Typing the `documentation` will launch the VLMD Data Dictionary definitions in the [HEAL Data Utilities documentation](https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions).
 
+---
+
 ## Using the VLMD Tool in HEAL Workspaces with Python
 
-This tool can also be used in HEAL Workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here] (./heal_workspace_registration.md).
+This tool can also be used in HEAL Workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here](./heal_workspace_registration.md).
 
 Once workspace access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in [HEAL Workspaces](https://healdata.org/portal/workspace).  
 
