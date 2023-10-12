@@ -6,7 +6,7 @@
 
 The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. 
 
-There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates ten different input file formats, which include:
+There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:
 
 - [CSV datasets](https://heal.github.io/healdata-utils/vlmd/extract/csvdata)
 - [CSV (minimal) data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/csvdd)
@@ -17,17 +17,13 @@ There are many applications and software packages that are commonly used during 
 - [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema)
 - [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata)
 
-Please follow the links above to learn more. 
-
 ---
 
 ## Using the Stand-alone VLMD Tool
 
-In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool from the NIH HEAL Initiative’s GitHub repository here: [https://github.com/HEAL/healdata-utils/releases/latest](https://github.com/HEAL/healdata-utils/releases/latest)
+In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository here: https://github.com/HEAL/healdata-utils/releases/latest
 
-Please select and download the version that matches your operating system. If your computer is running **MacOS**, you should select ‘healdata-utils-mac.zip’; for **Windows**, ‘healdata-utils-windows.zip’; for **Linux**, ‘healdata-utils-linux.zip’.
-
-Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system. 
+Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system.
 
 ![](../img/uncompress_vlmd_tool.gif)
 
@@ -36,17 +32,17 @@ Double-clicking `vlmd` will open your computer's command-line interface. On macO
 ![](../img/vlmd_interface.gif)
 
 #### extract
-Extract the variable level metadata from an existing file with a specific type/format
+    > Extract the variable level metadata from an existing file with a specific type/format
 
 #### start
-Start a data dictionary from an empty template
+    > Start a data dictionary from an empty template
 
 #### validate 
-Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
+    > Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
 
 !!! info
 
-Typing the `documentation` will launch the VLMD Data Dictionary definitions in the [HEAL Data Utilities documentation](https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions).
+    Typing the `documentation` command will launch the VLMD Data Dictionary definitions in the [HEAL Data Utilities documentation](https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions).
 
 ---
 
