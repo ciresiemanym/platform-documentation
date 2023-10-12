@@ -18,6 +18,7 @@ There are many applications and software packages that are commonly used during 
 - [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata)
 
 Please follow the links above to learn more. 
+
 ---
 
 ## Using the Stand-alone VLMD Tool
