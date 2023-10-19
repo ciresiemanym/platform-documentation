@@ -97,7 +97,11 @@ validate_vlmd_json("data/myhealjsondd.json")
 
 Both the python and command line routes will result in a JSON and CSV version of the HEAL data dictionary in the output folder along with the validation reports in the `errors` folder. See below:
 
-- `errors/heal-csv-errors.json`: outputted validation report for table in csv file against frictionless schema
+### Errors
+
+#### heal-csv-errors.json
+
+- outputted validation report for table in csv file against frictionless schema
 
 If valid, this file will contain:
 ```json
@@ -106,9 +110,10 @@ If valid, this file will contain:
     "errors": []
 }
 ```
-- `errors/heal-json-errors.json`:  outputted jsonschema validation report.
+#### heal-json-errors.json  
+- outputted jsonschema validation report.
 
-- If valid, this file will contain:
+If valid, this file will contain:
 ```json
 {
     "valid": true,
@@ -123,7 +128,7 @@ If no `outputdir` specified, the resulting HEAL-compliant data dictionaries will
 
 ## Next Steps 
 
-Once you’ve created your HEAL-compliant variable-level metadata, you’re ready to submit your data dictionary to the Platform 
+Once you’ve created your HEAL-compliant variable-level metadata, you’re ready to submit your data dictionary to the Platform.
 
 Link to Submit a Data Dcitionary. 
 
