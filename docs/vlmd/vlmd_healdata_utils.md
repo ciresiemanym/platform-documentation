@@ -140,8 +140,8 @@ Typical workflows for creating a HEAL-compliant data dictionary include:
 
     2. **Add/annotate with** additional information in your preferred HEAL data dictionary format (either `json` or `csv`).
         - To further annotate and use the data dictionary, see the variable-level metadata field property information below:
-            - [`csv` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/csv-fields.md)
-            - [`json` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/json-data-dictionary.md)
+            - [`csv` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/csv-fields.md){:target="_blank"}
+            - [`json` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/json-data-dictionary.md){:target="_blank"}
 
     3. **Run the `vlmd validate` command**  with your HEAL data dictioanry as the input to validate.
 
