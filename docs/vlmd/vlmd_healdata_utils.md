@@ -21,7 +21,9 @@ There are many applications and software packages that are commonly used during 
 
 ## Using the Stand-alone VLMD Tool
 
-In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository here: [https://github.com/HEAL/healdata-utils/releases/latest](https://github.com/HEAL/healdata-utils/releases/latest)
+In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:
+
+<p align="center">[Download Latest Software Relse](https://github.com/HEAL/healdata-utils/releases/latest){ .md-button }</p>
 
 Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system.
 
