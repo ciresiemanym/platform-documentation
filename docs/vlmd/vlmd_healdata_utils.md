@@ -93,9 +93,6 @@ validate_vlmd_json("data/myhealjsondd.json")
 
 ```
 
-Please note, using the VLMD Tool in HEAL workspaces is only recommended for users who have input data dictionary, rather than their entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment. 
-
-
 ## Output
 
 Both the python and command line routes will result in a JSON and CSV version of the HEAL data dictionary in the output folder along with the validation reports in the `errors` folder. See below:
@@ -123,4 +120,13 @@ If no `outputdir` specified, the resulting HEAL-compliant data dictionaries will
 
 - `heal-csvtemplate-data-dictionary.csv`: This is the CSV data dictionary
 - `heal-jsontemplate-data-dictionary.json`: This is the JSON version of the data dictionary
+
+## Next Steps 
+
+Once you’ve created your HEAL-compliant variable-level metadata, you’re ready to submit your data dictionary to the Platform 
+
+Link to Submit a Data Dcitionary. 
+
+If you have need any help generating a HEAL-compliant data dictionary with the VMLD Tool, or have a general inquiry, please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io)
+
 
