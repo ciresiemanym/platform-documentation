@@ -153,10 +153,9 @@ Typical workflows for creating a HEAL-compliant data dictionary include:
 
 Once you’ve created your HEAL-compliant data dictionary, you’re now ready to submit your data dictionary to the Platform.
 
-!!! ""
+!!! note ""
     
     <p align="center">[How to Submit a Data Dictionary](./vlmd_submission.md){ .md-button }</p>
-
 
 If you have need any help generating a HEAL-compliant data dictionary with the VMLD Tool, or have a general inquiry, please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io)
 
