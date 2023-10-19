@@ -23,7 +23,7 @@ There are many applications and software packages that are commonly used during 
 
 In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. 
 
-!!! success "Download the VLMD Tool"
+!!! info "Download the VLMD Tool"
    
     You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:
 
