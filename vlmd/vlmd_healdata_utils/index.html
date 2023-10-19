@@ -539,6 +539,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#next-steps" class="md-nav__link">
     Next Steps
   </a>
@@ -1126,6 +1133,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#next-steps" class="md-nav__link">
     Next Steps
   </a>
@@ -1239,8 +1253,35 @@
 <li><code>heal-csvtemplate-data-dictionary.csv</code>: This is the CSV data dictionary</li>
 <li><code>heal-jsontemplate-data-dictionary.json</code>: This is the JSON version of the data dictionary</li>
 </ul>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Typical workflows for creating a HEAL-compliant data dictionary include:</p>
+<div class="admonition note">
+<ol>
+<li>
+<p><strong>Create your data dictionary</strong></p>
+<p>(a) Run the <code>vlmd extract</code> command (or <code>convert_to_vlmd</code> if in python) to generate a HEAL-compliant data dictionary via your desired input format </p>
+<p>(b) Run the <code>vlmd template</code> command to start from an empty template.</p>
+</li>
+<li>
+<p><strong>Add/annotate with</strong> additional information in your preferred HEAL data dictionary format (either <code>json</code> or <code>csv</code>).</p>
+<ul>
+<li>To further annotate and use the data dictionary, see the variable-level metadata field property information below:<ul>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/schemas/csv-fields.md"><code>csv</code> data dictionary</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/schemas/json-data-dictionary.md"><code>json</code> data dictionary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Run the <code>vlmd validate</code> command</strong>  with your HEAL data dictioanry as the input to validate.</p>
+</li>
+<li>
+<p>Repeat (2) and (3) until you are ready to submit. Please note, currently only <code>name</code> and <code>description</code> are required.</p>
+</li>
+</ol>
+</div>
 <h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<p>Once you’ve created your HEAL-compliant variable-level metadata, you’re ready to submit your data dictionary to the Platform.</p>
+<p>Once you’ve created your HEAL-compliant data dictionary, you’re ready to submit it to the Platform.</p>
 <p>Link to Submit a Data Dcitionary. </p>
 <p>If you have need any help generating a HEAL-compliant data dictionary with the VMLD Tool, or have a general inquiry, please contact us at <a href="mailto:heal-support@datacommons.io">heal-support@datacommons.io</a></p>
 
