@@ -8,14 +8,14 @@ The HEAL Data Utilities is a tool developed in order to help investigators gener
 
 There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:
 
-- [CSV datasets](https://heal.github.io/healdata-utils/vlmd/extract/csvdata)
-- [CSV (minimal) data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/csvdd)
-- [SPSS datasets](https://heal.github.io/healdata-utils/vlmd/extract/spss)
-- [SAS datasets](https://heal.github.io/healdata-utils/vlmd/extract/sas)
-- [Stata datasets](https://heal.github.io/healdata-utils/vlmd/extract/stata)
-- [REDCap data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv)
-- [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema)
-- [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata)
+- [CSV datasets](https://heal.github.io/healdata-utils/vlmd/extract/csvdata){:target="_blank"}
+- [CSV (minimal) data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/csvdd){:target="_blank"}
+- [SPSS datasets](https://heal.github.io/healdata-utils/vlmd/extract/spss){:target="_blank"}
+- [SAS datasets](https://heal.github.io/healdata-utils/vlmd/extract/sas){:target="_blank"}
+- [Stata datasets](https://heal.github.io/healdata-utils/vlmd/extract/stata){:target="_blank"}
+- [REDCap data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv){:target="_blank"}
+- [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema){:target="_blank"}
+- [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata){:target="_blank"}
 
 ---
 
