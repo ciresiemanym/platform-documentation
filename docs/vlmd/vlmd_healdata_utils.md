@@ -35,7 +35,7 @@ Once you have downloaded the zip file, double-click the file to uncompress the p
 
 Double-clicking `vlmd` will open your computer's command-line interface. On macOS, this is the application **Terminal**. For Windows and PC users, your command-line interface may be **PowerShell** or **Command Prompt**.  Once the interface opens and the Tool is loaded, you will be greeted with four options: documentation, extract, start, and validate. 
 
-    <p align="center">![](../img/vlmd_interface.gif)</p>
+![](../img/vlmd_interface.gif)
 
 ### Executable Commands
 
@@ -60,7 +60,7 @@ This tool can also be used in HEAL Workspaces, rather than downloading to your l
 
 Once workspace access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in [HEAL Workspaces](https://healdata.org/portal/workspace).  
 
-    <p align="center">![](../img/generic_workspace_image.png){: style="height:500" }</p>
+![](../img/generic_workspace_image.png){ height="500" }
 
 After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. 
 
