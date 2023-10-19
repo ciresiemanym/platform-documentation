@@ -60,7 +60,7 @@ This tool can also be used in HEAL Workspaces, rather than downloading to your l
 
 Once workspace access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in [HEAL Workspaces](https://healdata.org/portal/workspace).  
 
-![](../img/generic_workspace_image.png)
+![](../img/generic_workspace_image.png){: align=”center”,style="height:150px;width:150px"}
 
 After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. 
 
