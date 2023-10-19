@@ -97,3 +97,30 @@ Please note, using the VLMD Tool in HEAL workspaces is only recommended for user
 
 
 ## Output
+
+Both the python and command line routes will result in a JSON and CSV version of the HEAL data dictionary in the output folder along with the validation reports in the `errors` folder. See below:
+
+- `errors/heal-csv-errors.json`: outputted validation report for table in csv file against frictionless schema
+
+If valid, this file will contain:
+```json
+{
+    "valid": true,
+    "errors": []
+}
+```
+- `errors/heal-json-errors.json`:  outputted jsonschema validation report.
+
+- If valid, this file will contain:
+```json
+{
+    "valid": true,
+    "errors": []
+}
+```
+
+If no `outputdir` specified, the resulting HEAL-compliant data dictionaries will be named:
+
+- `heal-csvtemplate-data-dictionary.csv`: This is the CSV data dictionary
+- `heal-jsontemplate-data-dictionary.json`: This is the JSON version of the data dictionary
+
