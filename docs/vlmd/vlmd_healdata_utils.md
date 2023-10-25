@@ -126,36 +126,14 @@ If no `outputdir` specified, the resulting HEAL-compliant data dictionaries will
 - `heal-csvtemplate-data-dictionary.csv`: This is the CSV data dictionary
 - `heal-jsontemplate-data-dictionary.json`: This is the JSON version of the data dictionary
 
-## Overview
-
-Typical workflows for creating a HEAL-compliant data dictionary include:
-
-!!! note ""
-
-    1. **Create your data dictionary**
-
-        (a) Run the `vlmd extract` command (or `convert_to_vlmd` if in python) to generate a HEAL-compliant data dictionary via your desired input format 
-
-        (b) Run the `vlmd template` command to start from an empty template.
-
-    2. **Add/annotate with** additional information in your preferred HEAL data dictionary format (either `json` or `csv`).
-        - To further annotate and use the data dictionary, see the variable-level metadata field property information below:
-            - [`csv` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/csv-fields.md){:target="_blank"}
-            - [`json` data dictionary](https://heal.github.io/healdata-utils/vlmd/schemas/json-data-dictionary.md){:target="_blank"}
-
-    3. **Run the `vlmd validate` command**  with your HEAL data dictioanry as the input to validate.
-
-    4. Repeat (2) and (3) until you are ready to submit. Please note, currently only `name` and `description` are required.
-
-
+For more information on workflows, functions, and definitions, please see the [HEAL Data Utilities Documentation](https://heal.github.io/healdata-utils/){:target="_blank"}. 
 
 ## Next Steps 
 
-Once you’ve created your HEAL-compliant data dictionary, you’re now ready to submit your data dictionary to the Platform.
+Once you’ve created your HEAL-compliant data dictionary, you’re now ready to submit your data dictionary to the Platform. Please see our instructions on submitting a data dictionary.
 
-!!! note ""
-    
-    <p align="center">[How to Submit a Data Dictionary](./vlmd_submission.md){ .md-button }</p>
+    - [How to Submit a Data Dictionary](./vlmd_submission.md)
 
 If you have need any help generating a HEAL-compliant data dictionary with the VMLD Tool, or have a general inquiry, please contact us at [heal-support@datacommons.io](mailto:heal-support@datacommons.io)
+
 
