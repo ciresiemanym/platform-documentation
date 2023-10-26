@@ -37,17 +37,14 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 
 ### CLI Commands 
 
-`extract`
-
-<dl>Extract the variable level metadata from an existing file with a specific type/format</dl>
-
-`start`
-
-<dl>Start a data dictionary from an empty template</dl>
-
-`validate`
-
-<dl>Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format</dl>
+<dl>
+    <dt>`extract`</dt>
+    <dd>Extract the variable level metadata from an existing file with a specific type/format</dd>
+    <dt>`start`</dt>
+    <dd>Start a data dictionary from an empty template</dd>
+    <dt>`validate`</dt>
+    <dd>Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format</dd>
+</dl>
 
 !!! info
 
@@ -60,6 +57,7 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here](./heal_workspace_registration.md).
 
 Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool. You can start by uploading your file to the persistent drive (**/pd**). Any data not saved to the persistent drive will be lost upon termination of the workspace. 
+
 
 <figure markdown>
     ![](../img/vlmd_in_workspace.png)
