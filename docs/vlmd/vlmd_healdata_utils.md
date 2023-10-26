@@ -29,23 +29,21 @@ In an effort to further streamline the data dictionary extraction process for re
 
     <p align="center">[Download Latest Software Release](https://github.com/HEAL/healdata-utils/releases/latest){ .md-button }</p>
 
-Once you have downloaded the zip file, double-click the file to uncompress the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system.
+Once you have downloaded the zip file, double-click the file to unzip the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system. 
 
-![](../img/uncompress_vlmd_tool.gif)
-
-Double-clicking `vlmd` will open your computer's command-line interface. On macOS, this is the application **Terminal**. For Windows and PC users, your command-line interface may be **PowerShell** or **Command Prompt**.  Once the interface opens and the Tool is loaded, you will be greeted with four options: documentation, extract, start, and validate. 
+Double-clicking `vlmd` will then open your computer's command-line interface (CLI). Once the interface opens and the VLMD Tool is loaded, you will be presented with four options: documentation, extract, start, and validate. 
 
 ![](../img/vlmd_interface.gif)
 
-### Executable Commands
+### CLI Commands 
 
-#### extract  
-Extract the variable level metadata from an existing file with a specific type/format
+#### extract
+:Extract the variable level metadata from an existing file with a specific type/format
 
-#### start  
+#### start
 Start a data dictionary from an empty template
 
-#### validate  
+#### validate 
 Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
 
 !!! info
