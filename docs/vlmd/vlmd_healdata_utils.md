@@ -39,8 +39,10 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 
 **extract**
 - Extract the variable level metadata from an existing file with a specific type/format
+
 **start**
 - Start a data dictionary from an empty template
+
 **validate**
 - Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format
 
