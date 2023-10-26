@@ -37,14 +37,17 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 
 ### CLI Commands 
 
-#### extract
-Extract the variable level metadata from an existing file with a specific type/format
+`extract`
 
-#### start
-Start a data dictionary from an empty template
+:    Extract the variable level metadata from an existing file with a specific type/format
 
-#### validate 
-Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
+`start`
+
+:    Start a data dictionary from an empty template
+
+`validate`
+
+:    Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.
 
 !!! info
 
@@ -66,7 +69,7 @@ After you’ve launched the workspace and uploaded your input file, you can impo
 
 ### Python Functions
 
-#### extract
+ `extract`
 ```python
 
 from healdata_utils import convert_to_vlmd
@@ -80,7 +83,7 @@ convert_to_vlmd(input_filepath="/pd/myproject/myfile.sav",inputtype="spss")
     Currently the python subcommand is `convert_to_vlmd` but will be changed to `extract_to_vlmd` to be
     consistent with CLI. `extract` was chosen to better reflect the functionality.
 
-#### start
+`start`
 ```python
 
 from healdata_utils import write_vlmd_template
@@ -88,7 +91,7 @@ from healdata_utils import write_vlmd_template
 write_vlmd_template(tmpdir.joinpath("heal.csv"),numfields=10)
     
 ```
-#### validate 
+`validate` 
 ```python
 
 from healdata_utils import validate_vlmd_csv,validate_vlmd_json
