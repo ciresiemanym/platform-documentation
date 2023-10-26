@@ -105,24 +105,4 @@
          <lastmod>2023-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
-    <url>
-         <loc>https://heal-docs-dev.io/vlmd/resources/supported_input_formats/</loc>
-         <lastmod>2023-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/</loc>
-         <lastmod>2023-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/csv-fields/</loc>
-         <lastmod>2023-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://heal-docs-dev.io/vlmd/resources/rendered-schemas/json-fields/</loc>
-         <lastmod>2023-10-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
 </urlset>
