@@ -417,33 +417,6 @@
     CLI Commands
   </a>
   
-    <nav class="md-nav" aria-label="CLI Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extract" class="md-nav__link">
-    extract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validate" class="md-nav__link">
-    validate
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -463,33 +436,6 @@
   <a href="#python-functions" class="md-nav__link">
     Python Functions
   </a>
-  
-    <nav class="md-nav" aria-label="Python Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extract_1" class="md-nav__link">
-    extract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start_1" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validate_1" class="md-nav__link">
-    validate
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1008,33 +954,6 @@
     CLI Commands
   </a>
   
-    <nav class="md-nav" aria-label="CLI Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extract" class="md-nav__link">
-    extract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validate" class="md-nav__link">
-    validate
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -1054,33 +973,6 @@
   <a href="#python-functions" class="md-nav__link">
     Python Functions
   </a>
-  
-    <nav class="md-nav" aria-label="Python Functions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#extract_1" class="md-nav__link">
-    extract
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#start_1" class="md-nav__link">
-    start
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#validate_1" class="md-nav__link">
-    validate
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1180,12 +1072,12 @@
 <p>Double-clicking <code>vlmd</code> will then open your computer's command-line interface (CLI). Once the interface opens and the VLMD Tool is loaded, you will be presented with four options: documentation, extract, start, and validate. </p>
 <p><img alt="" src="../../img/vlmd_interface.gif" /></p>
 <h3 id="cli-commands">CLI Commands<a class="headerlink" href="#cli-commands" title="Permanent link">&para;</a></h3>
-<h4 id="extract">extract<a class="headerlink" href="#extract" title="Permanent link">&para;</a></h4>
-<p>Extract the variable level metadata from an existing file with a specific type/format</p>
-<h4 id="start">start<a class="headerlink" href="#start" title="Permanent link">&para;</a></h4>
-<p>Start a data dictionary from an empty template</p>
-<h4 id="validate">validate<a class="headerlink" href="#validate" title="Permanent link">&para;</a></h4>
-<p>Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.</p>
+<p><code>extract</code></p>
+<p>:    Extract the variable level metadata from an existing file with a specific type/format</p>
+<p><code>start</code></p>
+<p>:    Start a data dictionary from an empty template</p>
+<p><code>validate</code></p>
+<p>:    Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Typing the <code>documentation</code> command will launch the VLMD Data Dictionary definitions in the <a href="https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions">HEAL Data Utilities documentation</a>.</p>
@@ -1198,28 +1090,28 @@
 <p>Please note, using the VLMD Tool in HEAL workspaces is only recommended for users whose input file is a data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment, even if your data has been properly deidentified. </p>
 <p>After you’ve launched the workspace and uploaded your input file, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats, all within a workspace. </p>
 <h3 id="python-functions">Python Functions<a class="headerlink" href="#python-functions" title="Permanent link">&para;</a></h3>
-<h4 id="extract_1">extract<a class="headerlink" href="#extract_1" title="Permanent link">&para;</a></h4>
+<p><code>extract</code>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">healdata_utils</span> <span class="kn">import</span> <span class="n">convert_to_vlmd</span>
 
 <span class="n">convert_to_vlmd</span><span class="p">(</span><span class="n">input_filepath</span><span class="o">=</span><span class="s2">&quot;/pd/myproject/myfile.sav&quot;</span><span class="p">,</span><span class="n">inputtype</span><span class="o">=</span><span class="s2">&quot;spss&quot;</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Currently the python subcommand is <code>convert_to_vlmd</code> but will be changed to <code>extract_to_vlmd</code> to be
 consistent with CLI. <code>extract</code> was chosen to better reflect the functionality.</p>
 </div>
-<h4 id="start_1">start<a class="headerlink" href="#start_1" title="Permanent link">&para;</a></h4>
+<p><code>start</code>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">healdata_utils</span> <span class="kn">import</span> <span class="n">write_vlmd_template</span>
 
 <span class="n">write_vlmd_template</span><span class="p">(</span><span class="n">tmpdir</span><span class="o">.</span><span class="n">joinpath</span><span class="p">(</span><span class="s2">&quot;heal.csv&quot;</span><span class="p">),</span><span class="n">numfields</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 </code></pre></div>
-<h4 id="validate_1">validate<a class="headerlink" href="#validate_1" title="Permanent link">&para;</a></h4>
+<code>validate</code> 
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">healdata_utils</span> <span class="kn">import</span> <span class="n">validate_vlmd_csv</span><span class="p">,</span><span class="n">validate_vlmd_json</span>
 
 <span class="n">validate_vlmd_csv</span><span class="p">(</span><span class="s2">&quot;data/myhealcsvdd.csv&quot;</span><span class="p">)</span>
 
 <span class="n">validate_vlmd_json</span><span class="p">(</span><span class="s2">&quot;data/myhealjsondd.json&quot;</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></p>
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>Both the python and command line routes will result in a JSON and CSV version of the HEAL data dictionary in the output folder along with the validation reports in the <code>errors</code> folder. See below:</p>
 <h3 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h3>
