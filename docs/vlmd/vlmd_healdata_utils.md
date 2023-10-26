@@ -37,7 +37,7 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 
 ### CLI Commands 
 
-<dl markdown>
+<dl>
     <dt>**extract**</dt>
     <dd>Extract the variable level metadata from an existing file with a specific type/format</dd>
     <dt>**start**</dt>
@@ -59,7 +59,7 @@ The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading 
 Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool. You can start by uploading your file to the persistent drive (**/pd**). Any data not saved to the persistent drive will be lost upon termination of the workspace. 
 
 
-<figure markdown>
+<figure>
 ![](../img/vlmd_in_workspace.png)
     <figcaption>Upload data to persistent drive</figcaption>
 </figure>
