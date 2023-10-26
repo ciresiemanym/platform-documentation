@@ -56,11 +56,13 @@ Check (validate) an existing HEAL Data Dictionary file to see if it follows the 
 
 The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here](./heal_workspace_registration.md).
 
-Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool.
+Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool. You can start by uploading your file to the persistent drive (**/pd**). Any data not saved to the persistent drive will be lost upon termination of the workspace. 
 
-![](../img/generic_workspace_image.png){ height=500 }
+![](../img/vlmd_in_workspace.png){ height=500 }
 
-After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. 
+Please note, using the VLMD Tool in HEAL workspaces is only recommended for users whose input file is a data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment, even if your data has been properly deidentified. 
+
+After you’ve launched the workspace and uploaded your input file, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats, all within a workspace. 
 
 ### Python Functions
 
