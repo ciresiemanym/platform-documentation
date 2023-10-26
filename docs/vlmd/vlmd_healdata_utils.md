@@ -54,11 +54,11 @@ Check (validate) an existing HEAL Data Dictionary file to see if it follows the 
 
 ## Using the VLMD Tool in HEAL Workspaces with Python
 
-This tool can also be used in HEAL Workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here](./heal_workspace_registration.md).
+The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions [here](./heal_workspace_registration.md).
 
-Once workspace access has been approved, select the (Generic) Jupyter Lab Notebook with R Kernel to get started using the VLMD Tool in [HEAL Workspaces](https://healdata.org/portal/workspace).  
+Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool.
 
-![](../img/generic_workspace_image.png){ height="300" }
+![](../img/generic_workspace_image.png){ height=500 }
 
 After you’ve launched the workspace, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats. 
 
@@ -72,6 +72,12 @@ from healdata_utils import convert_to_vlmd
 convert_to_vlmd(input_filepath="/pd/myproject/myfile.sav",inputtype="spss")
 
 ```
+
+!!! warning 
+
+    Currently the python subcommand is `convert_to_vlmd` but will be changed to `extract_to_vlmd` to be
+    consistent with CLI. `extract` was chosen to better reflect the functionality.
+
 #### start
 ```python
 
