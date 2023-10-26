@@ -37,14 +37,12 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 
 ### CLI Commands 
 
-<dl>
-    <dt>**extract**</dt>
-    <dd>Extract the variable level metadata from an existing file with a specific type/format</dd>
-    <dt>**start**</dt>
-    <dd>Start a data dictionary from an empty template</dd>
-    <dt>**validate**</dt>
-    <dd>Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format</dd>
-</dl>
+**extract**
+- Extract the variable level metadata from an existing file with a specific type/format
+**start**
+- Start a data dictionary from an empty template
+**validate**
+- Check (validate) an existing HEAL Data Dictionary file to see if it follows the HEAL specifications after filling out a template or further annotation after extracting from a different format
 
 !!! info
 
@@ -60,7 +58,7 @@ Once workspace access has been approved, select the **(Generic) Jupyter Lab Note
 
 
 <figure>
-![](../img/vlmd_in_workspace.png)
+    ![](../img/vlmd_in_workspace.png)
     <figcaption>Upload data to persistent drive</figcaption>
 </figure>
 
