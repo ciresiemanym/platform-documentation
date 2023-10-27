@@ -2,33 +2,11 @@
 
 !!! info
 
-    The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for more information.
+    The following instructions will walk you through the process of using the stand-alone executable version of the HEAL Data Utilities' VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for more information.
 
 The HEAL Data Utilities is a tool developed to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. 
 
 ---
-
-## Workflow Summary
-
-Typical workflows for creating a HEAL-compliant data dictionary include:
-
-!!! note ""
-
-    1. **Create your data dictionary**
-
-        (a) Run the `vlmd extract` command (or `convert_to_vlmd` if in python) to generate a HEAL-compliant data dictionary via your desired input format 
-
-        (b) Run the `vlmd template` command to start from an empty template.
-
-    2. **Add/annotate with** additional information in your preferred HEAL data dictionary format (either `json` or `csv`).
-        - To further annotate and use the data dictionary, see the variable-level metadata field property information below:
-            - [`csv` data dictionary](./schemas/csv-fields.md)
-            - [`json` data dictionary](./schemas/json-data-dictionary.md)
-
-    3. **Run the `vlmd validate` command**  with your HEAL data dictioanry as the input to validate.
-
-    4. Repeat (2) and (3) until you are ready to submit. Please note, currently only `name` and `description` are required.
-
 
 ## Using the Stand-alone VLMD Tool
 
@@ -159,6 +137,27 @@ If no `outputdir` specified, the resulting HEAL-compliant data dictionaries will
 - `heal-jsontemplate-data-dictionary.json`: This is the JSON version of the data dictionary
 
 For more information on workflows, functions, and definitions, please see the [HEAL Data Utilities Documentation](https://heal.github.io/healdata-utils/){:target="_blank"}. 
+
+## Workflow Summary
+
+Typical workflows for creating a HEAL-compliant data dictionary include:
+
+!!! note ""
+
+    1. **Create your data dictionary**
+
+        (a) Run the `vlmd extract` command (or `convert_to_vlmd` if in python) to generate a HEAL-compliant data dictionary via your desired input format 
+
+        (b) Run the `vlmd template` command to start from an empty template.
+
+    2. **Add/annotate with** additional information in your preferred HEAL data dictionary format (either `json` or `csv`).
+        - To further annotate and use the data dictionary, see the variable-level metadata field property information below:
+            - [`csv` data dictionary](./schemas/csv-fields.md)
+            - [`json` data dictionary](./schemas/json-data-dictionary.md)
+
+    3. **Run the `vlmd validate` command**  with your HEAL data dictioanry as the input to validate.
+
+    4. Repeat (2) and (3) until you are ready to submit. Please note, currently only `name` and `description` are required.
 
 ## Next Steps 
 
