@@ -47,10 +47,7 @@ The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading 
 
 Once workspace access has been approved, select the **(Generic) Jupyter Lab Notebook with R Kernel** to get started using the VLMD Tool. You can start by uploading your file to the persistent drive (**/pd**). Any data not saved to the persistent drive will be lost upon termination of the workspace. 
 
-<figure>
 ![](../img/vlmd_in_workspace.png)
-<figcaption>Upload data to persistent drive</figcaption>
-</figure>
 
 Please note, using the VLMD Tool in HEAL workspaces is only recommended for users whose input file is a data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment, even if your data has been properly deidentified. 
 
