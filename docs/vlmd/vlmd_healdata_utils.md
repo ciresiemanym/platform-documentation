@@ -4,18 +4,7 @@
 
     The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for more information.
 
-The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. 
-
-There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:
-
-- [CSV datasets](https://heal.github.io/healdata-utils/vlmd/extract/csvdata){:target="_blank"}
-- [CSV (minimal) data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/csvdd){:target="_blank"}
-- [SPSS datasets](https://heal.github.io/healdata-utils/vlmd/extract/spss){:target="_blank"}
-- [SAS datasets](https://heal.github.io/healdata-utils/vlmd/extract/sas){:target="_blank"}
-- [Stata datasets](https://heal.github.io/healdata-utils/vlmd/extract/stata){:target="_blank"}
-- [REDCap data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv){:target="_blank"}
-- [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema){:target="_blank"}
-- [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata){:target="_blank"}
+The HEAL Data Utilities is a tool developed to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. 
 
 ---
 
@@ -103,6 +92,19 @@ validate_vlmd_csv("data/myhealcsvdd.csv")
 validate_vlmd_json("data/myhealjsondd.json")
 
 ```
+
+## Input
+
+There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:
+
+- [CSV datasets](https://heal.github.io/healdata-utils/vlmd/extract/csvdata){:target="_blank"}
+- [CSV (minimal) data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/csvdd){:target="_blank"}
+- [SPSS datasets](https://heal.github.io/healdata-utils/vlmd/extract/spss){:target="_blank"}
+- [SAS datasets](https://heal.github.io/healdata-utils/vlmd/extract/sas){:target="_blank"}
+- [Stata datasets](https://heal.github.io/healdata-utils/vlmd/extract/stata){:target="_blank"}
+- [REDCap data dictionary](https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv){:target="_blank"}
+- [Frictionless Table Schema](https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema){:target="_blank"}
+- [Excel dataset](https://heal.github.io/healdata-utils/vlmd/extract/exceldata){:target="_blank"}
 
 ## Output
 
