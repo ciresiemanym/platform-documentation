@@ -403,6 +403,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    Workflow Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#using-the-stand-alone-vlmd-tool" class="md-nav__link">
     Using the Stand-alone VLMD Tool
   </a>
@@ -791,6 +798,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    Workflow Summary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#using-the-stand-alone-vlmd-tool" class="md-nav__link">
     Using the Stand-alone VLMD Tool
   </a>
@@ -886,15 +900,42 @@
 </div>
 <p>The HEAL Data Utilities is a tool developed to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. </p>
 <hr />
+<h2 id="workflow-summary">Workflow Summary<a class="headerlink" href="#workflow-summary" title="Permanent link">&para;</a></h2>
+<p>Typical workflows for creating a HEAL-compliant data dictionary include:</p>
+<div class="admonition note">
+<ol>
+<li>
+<p><strong>Create your data dictionary</strong></p>
+<p>(a) Run the <code>vlmd extract</code> command (or <code>convert_to_vlmd</code> if in python) to generate a HEAL-compliant data dictionary via your desired input format </p>
+<p>(b) Run the <code>vlmd template</code> command to start from an empty template.</p>
+</li>
+<li>
+<p><strong>Add/annotate with</strong> additional information in your preferred HEAL data dictionary format (either <code>json</code> or <code>csv</code>).</p>
+<ul>
+<li>To further annotate and use the data dictionary, see the variable-level metadata field property information below:<ul>
+<li><a href="./schemas/csv-fields.md"><code>csv</code> data dictionary</a></li>
+<li><a href="./schemas/json-data-dictionary.md"><code>json</code> data dictionary</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Run the <code>vlmd validate</code> command</strong>  with your HEAL data dictioanry as the input to validate.</p>
+</li>
+<li>
+<p>Repeat (2) and (3) until you are ready to submit. Please note, currently only <code>name</code> and <code>description</code> are required.</p>
+</li>
+</ol>
+</div>
 <h2 id="using-the-stand-alone-vlmd-tool">Using the Stand-alone VLMD Tool<a class="headerlink" href="#using-the-stand-alone-vlmd-tool" title="Permanent link">&para;</a></h2>
-<p>In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. </p>
+<p>In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool that can be downloaded from GitHub.  </p>
 <div class="admonition info">
 <p class="admonition-title">Download the VLMD Tool</p>
 <p>You can download the latest version of the VLMD Tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:</p>
 <p><p align="center"><a class="md-button" href="https://github.com/HEAL/healdata-utils/releases/latest">Download Latest Software Release</a></p></p>
 </div>
-<p>Once you have downloaded the zip file, double-click the file to unzip the package. You should then see a file labeled <code>vlmd</code> or <code>vlmd.exe</code>, depending on your operating system. </p>
-<p>Double-clicking <code>vlmd</code> will then open your computer's command-line interface (CLI). Once the interface opens and the VLMD Tool is loaded, you will be presented with four options: documentation, extract, start, and validate. </p>
+<p>Once you have downloaded the appropriate zip file, double-click the file to unzip the package. You should then see a file named <code>vlmd</code> or <code>vlmd.exe</code>, depending on your operating system. </p>
+<p>Double-clicking <code>vlmd</code> will then open your computer's command-line interface (CLI) and begin loading the VLMD Tool. Once the interface opens and the Tool is loaded, you will be presented with four prompts: documentation, extract, start, and validate. </p>
 <p><img alt="" src="../../img/vlmd_interface.gif" /></p>
 <h3 id="cli-commands">CLI Commands<a class="headerlink" href="#cli-commands" title="Permanent link">&para;</a></h3>
 <p><strong>extract</strong>
@@ -910,9 +951,9 @@
 <hr />
 <h2 id="using-the-vlmd-tool-in-heal-workspaces-with-python">Using the VLMD Tool in HEAL Workspaces with Python<a class="headerlink" href="#using-the-vlmd-tool-in-heal-workspaces-with-python" title="Permanent link">&para;</a></h2>
 <p>The VLMD Tool can also be leveraged in HEAL workspaces, rather than downloading to your local machine. To request access to a workspace, see instructions <a href="./heal_workspace_registration.md">here</a>.</p>
-<p>Once workspace access has been approved, select the <strong>(Generic) Jupyter Lab Notebook with R Kernel</strong> to get started using the VLMD Tool. You can start by uploading your file to the persistent drive (<strong>/pd</strong>). Any data not saved to the persistent drive will be lost upon termination of the workspace. </p>
+<p>Once workspace access has been approved, select the <strong>(Generic) Jupyter Lab Notebook with R Kernel</strong>, which has the VLMD Tool already installd. You can then upload your input file to the persistent drive (<strong>/pd</strong>). Any data not saved to the persistent drive will be lost upon termination of the workspace. </p>
 <p><img alt="" src="../../img/vlmd_in_workspace.png" /></p>
-<p>Please note, using the VLMD Tool in HEAL workspaces is only recommended for users whose input file is a data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment, even if your data has been properly deidentified. </p>
+<p><em>Please note, using the VLMD Tool in HEAL workspaces is only recommended for users whose input file is a data dictionary, rather than an entire dataset. We do not recommend uploading your entire dataset into the secure cloud environment, even if your data has been properly deidentified.</em> </p>
 <p>After you’ve launched the workspace and uploaded your input file, you can import the necessary functions. The below commands provide examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats, all within a workspace. </p>
 <h3 id="python-functions">Python Functions<a class="headerlink" href="#python-functions" title="Permanent link">&para;</a></h3>
 <p><strong>extract</strong>
@@ -920,8 +961,8 @@
 
 <span class="n">convert_to_vlmd</span><span class="p">(</span><span class="n">input_filepath</span><span class="o">=</span><span class="s2">&quot;/pd/myproject/myfile.sav&quot;</span><span class="p">,</span><span class="n">inputtype</span><span class="o">=</span><span class="s2">&quot;spss&quot;</span><span class="p">)</span>
 </code></pre></div></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Currently the python subcommand is <code>convert_to_vlmd</code> but will be changed to <code>extract_to_vlmd</code> to be
 consistent with CLI. <code>extract</code> was chosen to better reflect the functionality.</p>
 </div>
