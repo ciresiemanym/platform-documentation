@@ -445,6 +445,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     Output
   </a>
@@ -962,6 +969,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    Input
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#output" class="md-nav__link">
     Output
   </a>
@@ -1008,18 +1022,7 @@
 <p class="admonition-title">Info</p>
 <p>The following instructions will walk you through the process of downloading a stand-alone executable version of the VLMD Tool. This is recommended for users with less familiarity with the CLI, who want a more streamlined approach to generate HEAL-compliant data dictionaries. If you would like to install and integrate the VLMD Tool into an existing local pipeline, please check out the HEAL Data Utilities on <a href="https://github.com/heal/healdata-utils">GitHub</a> or <a href="https://pypi.org/project/healdata-utils/">PyPi</a> for more information.</p>
 </div>
-<p>The HEAL Data Utilities is a tool developed in order to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. </p>
-<p>There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:</p>
-<ul>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdata" target="_blank">CSV datasets</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdd" target="_blank">CSV (minimal) data dictionary</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/spss" target="_blank">SPSS datasets</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/sas" target="_blank">SAS datasets</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/stata" target="_blank">Stata datasets</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv" target="_blank">REDCap data dictionary</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema" target="_blank">Frictionless Table Schema</a></li>
-<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/exceldata" target="_blank">Excel dataset</a></li>
-</ul>
+<p>The HEAL Data Utilities is a tool developed to help investigators generate HEAL-compliant variable-level metadata (VLMD), in the form of standardized data dictionaries. This VLMD Tool is a software package that can be leveraged via a command-line interface (CLI) and HEAL Workspaces, and it can also be incorporated into existing pipelines. </p>
 <hr />
 <h2 id="using-the-stand-alone-vlmd-tool">Using the Stand-alone VLMD Tool<a class="headerlink" href="#using-the-stand-alone-vlmd-tool" title="Permanent link">&para;</a></h2>
 <p>In an effort to further streamline the data dictionary extraction process for researchers, we have developed a stand-alone executable version of the VLMD Tool. </p>
@@ -1076,6 +1079,18 @@ consistent with CLI. <code>extract</code> was chosen to better reflect the funct
 
 <span class="n">validate_vlmd_json</span><span class="p">(</span><span class="s2">&quot;data/myhealjsondd.json&quot;</span><span class="p">)</span>
 </code></pre></div></p>
+<h2 id="input">Input<a class="headerlink" href="#input" title="Permanent link">&para;</a></h2>
+<p>There are many applications and software packages that are commonly used during the data collection and processing phases of studies. The HEAL Data Utilities accommodates several different input file formats. Please follow the links below if you would like to learn more:</p>
+<ul>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdata" target="_blank">CSV datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/csvdd" target="_blank">CSV (minimal) data dictionary</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/spss" target="_blank">SPSS datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/sas" target="_blank">SAS datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/stata" target="_blank">Stata datasets</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/redcapcsv" target="_blank">REDCap data dictionary</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/frictionlessschema" target="_blank">Frictionless Table Schema</a></li>
+<li><a href="https://heal.github.io/healdata-utils/vlmd/extract/exceldata" target="_blank">Excel dataset</a></li>
+</ul>
 <h2 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h2>
 <p>Both the python and command line routes will result in a JSON and CSV version of the HEAL data dictionary in the output folder along with the validation reports in the <code>errors</code> folder. See below:</p>
 <h3 id="errors">Errors<a class="headerlink" href="#errors" title="Permanent link">&para;</a></h3>
