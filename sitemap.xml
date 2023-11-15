@@ -6,11 +6,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://heal-docs-dev.io/09-workspace_page/</loc>
-         <lastmod>2023-11-15</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://heal-docs-dev.io/contact/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
@@ -32,6 +27,11 @@
     </url>
     <url>
          <loc>https://heal-docs-dev.io/heal_workspace_registration/</loc>
+         <lastmod>2023-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/heal_workspaces/</loc>
          <lastmod>2023-11-15</lastmod>
          <changefreq>daily</changefreq>
     </url>
