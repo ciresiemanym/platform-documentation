@@ -14,7 +14,7 @@ In an effort to further streamline the VLMD extraction process for researchers, 
 
 !!! info "Download the VLMD Tool"
 
-You can download the latest version of the VLMD tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:
+     You can download the latest version of the VLMD tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:
 
 <p align="center">[Download Latest Software Release](https://github.com/HEAL/healdata-utils/releases/latest){ .md-button }{:target="_blank"}</p>
 
@@ -37,7 +37,7 @@ Check (validate) an existing HEAL Data Dictionary file to see if it follows the 
 
 !!! info
 
-Typing the `documentation` command will launch the VLMD Data Dictionary definitions in the [HEAL Data Utilities documentation](https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions){:target="_blank"}.
+     Typing the `documentation` command will launch the VLMD Data Dictionary definitions in the [HEAL Data Utilities documentation](https://heal.github.io/healdata-utils/vlmd/#csv-and-json-data-dictionary-definitions){:target="_blank"}.
 
 ## Using the VLMD Tool in HEAL Workspaces with Python
 
