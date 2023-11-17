@@ -47,9 +47,11 @@ Once workspace access has been approved, select the **(Generic) Jupyter Lab Note
 
 ![](../img/vlmd_in_workspace.png){ height=”500” }
 
-Users who upload files to a workspace are responsible for ensuring that they have permission and authority to do so, including adequate consent from participants and approval from their IRB. 
+!!! info
+     
+     Users who upload files to a workspace are responsible for ensuring that they have permission and authority to do so, including adequate consent from participants and approval from their IRB. 
 
-Particular care must be made to datasets containing individual-level data. For this reason, if you are extracting variable-level metadata from an actual dataset (rather than a REDCap data dictionary), we suggest uploading a dataset shell, i.e. a file with field headers but without any data. 
+     Particular care must be made to datasets containing individual-level data. For this reason, if you are extracting variable-level metadata from an actual dataset (rather than a REDCap data dictionary), we suggest uploading a dataset shell, i.e. a file with field headers but without any data. 
 
 
 
