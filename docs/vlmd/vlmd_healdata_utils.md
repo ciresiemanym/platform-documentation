@@ -2,7 +2,7 @@
 
 !!! info
 
-The following instructions pertain to the stand-alone, executable version of the HEAL VLMD tool as well as the use of the VLMD tool in HEAL Workspaces. These two options are recommended for users who are unfamiliar with installing Python software and/or who want to generate VLMD documents in the quickest and easiest way possible. If you would like to install and integrate the VLMD tool into an existing, local pipeline, please see the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for more information.
+     The following instructions pertain to the stand-alone, executable version of the HEAL VLMD tool as well as the use of the VLMD tool in HEAL Workspaces. These two options are recommended for users who are unfamiliar with installing Python software and/or who want to generate VLMD documents in the quickest and easiest way possible. If you would like to install and integrate the VLMD tool into an existing, local pipeline, please see the HEAL Data Utilities on [GitHub](https://github.com/heal/healdata-utils) or [PyPi](https://pypi.org/project/healdata-utils/) for more information.
 
 The HEAL VLMD tool was created to help investigators generate HEAL-compliant variable-level metadata (VLMD) documents that may be uploaded to the HEAL Data Platform. This VLMD tool uses a command-line interface (CLI), is available within HEAL Data Platform Workspaces, and can be incorporated into existing pipelines in the form of a Python module. 
 
