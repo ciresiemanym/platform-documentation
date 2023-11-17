@@ -27,7 +27,7 @@ Double-clicking `vlmd` will then open your computer's command-line interface (CL
 ### CLI Commands 
 
 #### extract
-:Extract the variable level metadata from an existing file with a specific type/format
+Extract the variable level metadata from an existing file with a specific type/format
 
 #### start
 Start a data dictionary from an empty template
