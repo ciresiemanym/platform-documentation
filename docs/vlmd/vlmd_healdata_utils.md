@@ -16,7 +16,7 @@ In an effort to further streamline the VLMD extraction process for researchers, 
 
      You can download the latest version of the VLMD tool for your operating system (i.e., MacOS, Windows, Linux) from the NIH HEAL Initiative’s GitHub repository:
 
-     <p align="center">[Download Latest Software Release](https://github.com/HEAL/healdata-utils/releases/latest){ .md-button }{:target="_blank"}</p>
+     <p align="center">[Download Latest Software Release](https://github.com/HEAL/healdata-utils/releases/latest){ .md-button }</p>
 
 Once you have downloaded the appropriate zip file, double-click the file to unzip the package. You should then see a file labeled `vlmd` or `vlmd.exe`, depending on your operating system and how it is configured. 
 
