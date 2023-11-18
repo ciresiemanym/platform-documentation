@@ -48,11 +48,10 @@ Once workspace access has been approved, select the **(Generic) Jupyter Lab Note
 ![](../img/vlmd_in_workspace.png){ height=”500” }
 
 !!! info
-     
+
      Users who upload files to a workspace are responsible for ensuring that they have permission and authority to do so, including adequate consent from participants and approval from their IRB. 
 
-     Particular care must be made to datasets containing individual-level data. For this reason, if you are extracting variable-level metadata from an actual dataset (rather than a REDCap data dictionary), we suggest uploading a dataset shell, i.e. a file with field headers but without any data. 
-
+     Particular care must be taken with datasets containing individual-level data. For this reason, if you are extracting variable-level metadata from an actual dataset (rather than a REDCap data dictionary, for example), we suggest uploading a dataset shell, i.e., a file with field headers but without any data. 
 
 
 After you’ve launched the workspace and uploaded your data dictionary or data file, you can import the necessary functions. Below are examples of how to extract VLMD from an SPSS data file, create a new VLMD file from scratch, and validate an existing data dictionary in CSV and JSON formats, all within a workspace. 
