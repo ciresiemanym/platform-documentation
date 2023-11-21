@@ -1,6 +1,6 @@
 # Submit a Data Dictionary
 
-In order to submit a HEAL-compliant data dictionary and have it be associated with your study on the HEAL Data Platform, that study must first be registered. If you have not already registered your study, please see our instructions on [study registration](study-registration/index.md).
+In order to submit a HEAL-compliant data dictionary and have it be associated with your study on the HEAL Data Platform, that study must first be registered. If you have not already registered your study, please see our instructions on [study registration](../study-registration/index.md).
 
 If you were the team member to register your study, please skip ahead to our instructions on how to [submit a data dictionary to the Platform](#submit-a-data-dictionary_1). 
 
