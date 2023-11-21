@@ -1,4 +1,4 @@
-# Generate a HEAL-compliant Data Dictionary (Beta Testing)
+# Generate a HEAL-compliant Data Dictionary
 
 !!! info
 
