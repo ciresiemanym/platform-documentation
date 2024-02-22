@@ -1,19 +1,19 @@
 # Workspaces
 
 !!! info
-To use workspaces, you must first register for workspace access as described on the [Workspace Registration page][Register for workspaces].
+      To use workspaces, you must first register for workspace access as described on the [Workspace Registration page][Register for workspaces].
 
 HEAL workspaces are secure data analysis environments in the cloud that can access data from one or more data resources in the HEAL Data Ecosystem. By default, workspaces include Jupyter notebooks, Python and R, but can be configured to host virtually any application, including analysis workflows, data processing pipelines, or data visualization tools.
 
-> New to Jupyter? Learn more about the popular tool for data scientists on [Jupyter.org][Jupyter] (disclaimer: CTDS is not responsible for the content).
+> New to Jupyter? Learn more about the popular tool for data scientists on [Jupyter.org](https://jupyter.org/) (disclaimer: CTDS is not responsible for the content).
 
 ## Guidelines to get started in Workspaces
 
 Once you have access to workspaces, use this guide below to get started with analysis work in workspaces.
 
-1. Log in via [https://healdata.org/portal/login][HEAL login] to access workspaces.
+1. Log in via [https://healdata.org/portal/login](https://healdata.org/portal/login) to access workspaces.
 
-2. After navigating to [https://healdata.org/portal/workspace][HEAL Workspace], you will discover a list of pre-configured virtual machine (VM) images, as shown below.
+2. After navigating to [https://healdata.org/portal/workspace](https://healdata.org/portal/workspace), you will discover a list of pre-configured virtual machine (VM) images, as shown below.
 
       ![Available workspaces on the HEAL Data Platform][img workspaces]
 
@@ -22,15 +22,15 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 3. Click “Launch” on any of the workspace options to spin up a copy of that VM. The status of launching the workspace is displayed after clicking on “Launch”. Note: Launching the VM may take several minutes.
 
-      ![Screenshot of the launch status of the workspace][img Workspace launch status]
+  <!--    ![Screenshot of the launch status of the workspace][img Workspace launch status] -->
 
 4. After launching, the home folder is displayed. One of these folders is your persistent drive ("/pd").
 
-      ![Workspace home folder, including the /pd directory][img Workspace Data Folder]
+  <!--    ![Workspace home folder, including the /pd directory][img Workspace Data Folder] -->
 
 5. Select the /pd folder. New files or licenses should be saved in the the /pd directory if users need to access them after restarting the workspaces. Only files saved in the /pd directory will remain available after termination of a workspace session.
 
-      [![Screenshot of the /pd folder][img PD folder]{: style="height:400px"}]
+    <!--  [![Screenshot of the /pd folder][img PD folder]{: style="height:400px"}] -->
 
       * **Attention:** Any personal files in the folder “data” will be lost. Personal files in the directory /pd will persist.
       * Do not save files in the "data" or “data/brh.data-commons.org” folders.
@@ -39,7 +39,7 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 6. Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programming language. *Note: You can open and run multiple notebooks in your workspace; however, the generic, tutorial and nextflow workspace images are currently separate Docker images. There is no functionality to combine them or run nextflow in the Tutorial or Generic images. This may be available in the future, after further testing and development activities.*
 
-      ![Start a new notebook under “Notebook” in the Launcher tab][img New Notebook]
+    <!--  ![Start a new notebook under “Notebook” in the Launcher tab][img New Notebook] -->
 
 7. **Experiment away!** Code blocks are entered in cells, which can be executed individually or all at once. Code documentation and comments can also be entered in cells, and the cell type can be set to support Markdown.
 
@@ -47,7 +47,7 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 8. Do not forget to terminate your workspace when you are done with your session. Unterminated workspaces can continue to accrue computational costs. **Note: workspaces automatically shut down after 90 minutes of [idle time][Workspace timeout].**
 
-      ![Screenshot for terminating your workspace][img Terminate workspace]
+ <!-- ![Screenshot for terminating your workspace][img Terminate workspace] -->
 
 Further reading: read more about how to download data files into the Workspaces [here][Download data files].
 
@@ -55,17 +55,17 @@ Further reading: read more about how to download data files into the Workspaces 
 
 You can **upload** data files or Notebooks from your local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).
 
-![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.][img workspace upload]
+<!--![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.][img workspace upload]-->
 
 
 
 YouUsers can then **save** the notebook by clicking "File" - "Save as", as shown below.
 
-![Save the notebook under “File” - "Save Notebook as"][img Notebook save]
+<!--![Save the notebook under “File” - "Save Notebook as"][img Notebook save]-->
 
 You can then **download** notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".
 
-![Download notebook][img download notebook]
+<!--![Download notebook][img download notebook]-->
 
 ## Environments, Languages, and Tools
 
@@ -90,7 +90,7 @@ Both Python 3 and R are available in Jupyter Notebooks.
 
 Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical for data analysis are already included in the base workspace images without further installation required. For Python and R, users can start a new notebook with one of the tiles under "Notebook", as shown below.
 
-![Find Python 3 or R when starting a new notebook under “New”.][img New Notebook]
+<!-- ![Find Python 3 or R when starting a new notebook under “New”.][img New Notebook] -->
 
 ## Automatic Workspace Shutdown
 
@@ -98,7 +98,7 @@ Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical
 
 **Warning:** Workspaces will also automatically shut down after 90 minutes of idle time. A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
 
-![2' warning for shutdown for workspace][img Workspace shutdown 2']
+<!-- ![2' warning for shutdown for workspace][img Workspace shutdown 2'] -->
 
 <!-- Links and Images -->
 [img login]: ./img/brh-login.png
