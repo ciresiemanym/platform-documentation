@@ -1,29 +1,30 @@
-# **Workspaces**
+# Workspaces
 
-**To use the workspace, users must register for workspace accounts to use the workspaces, as described on the [Workspace Registration page][Register for workspaces].**
+!!! info
+To use workspaces, you must first register for workspace access as described on the [Workspace Registration page][Register for workspaces].
 
-BRH workspaces are secure data analysis environments in the cloud that can access data from one or more data resources. By default, Workspaces include Jupyter notebooks, Python and R, but can be configured to host virtually any application, including analysis workflows, data processing pipelines, or data visualization apps.
+HEAL workspaces are secure data analysis environments in the cloud that can access data from one or more data resources in the HEAL Data Ecosystem. By default, workspaces include Jupyter notebooks, Python and R, but can be configured to host virtually any application, including analysis workflows, data processing pipelines, or data visualization tools.
 
 > New to Jupyter? Learn more about the popular tool for data scientists on [Jupyter.org][Jupyter] (disclaimer: CTDS is not responsible for the content).
 
-## Guideline to get started in Workspaces
+## Guidelines to get started in Workspaces
 
-Once users have access to workspaces, use this guide below to get started with analysis work in workspaces.
+Once you have access to workspaces, use this guide below to get started with analysis work in workspaces.
 
-1. Users need to log in via [https://brh.data-commons.org/login][BRH login] to access workspaces.
+1. Log in via [https://healdata.org/portal/login][HEAL login] to access workspaces.
 
-2. After navigating to [https://brh.data-commons.org/workspace][BRH Workspace], users will discover a list of pre-configured virtual machine (VM) images, as shown below.
+2. After navigating to [https://healdata.org/portal/workspace][HEAL Workspace], you will discover a list of pre-configured virtual machine (VM) images, as shown below.
 
-      ![Available workspaces on BRH][img workspaces]
+      ![Available workspaces on the HEAL Data Platform][img workspaces]
 
       * **(Generic) Jupyter Notebook with R kernel:** Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies from the Discovery Page and want to start your custom analysis.
-      * **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials][BRH tutorial notebooks] written in Python or R, which pull data from various sources of the Biomedical Research Hub to leverage statistical programs and data analysis tools. These are excellent resources for code to pull and analyze data from BRH, and examples that illustrate the variety of data and analyses available through BRH.
+      * **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials][HEAL tutorial notebooks] written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.
 
 3. Click “Launch” on any of the workspace options to spin up a copy of that VM. The status of launching the workspace is displayed after clicking on “Launch”. Note: Launching the VM may take several minutes.
 
       ![Screenshot of the launch status of the workspace][img Workspace launch status]
 
-4. After launching, the home folders are displayed. One of these folders is the user's persistent drive ("/pd").
+4. After launching, the home folder is displayed. One of these folders is your persistent drive ("/pd").
 
       ![Workspace home folder, including the /pd directory][img Workspace Data Folder]
 
@@ -36,7 +37,7 @@ Once users have access to workspaces, use this guide below to get started with a
       * The folder “brh.data-commons.org” in the “data” folder will host the data files you have exported from the Discovery Page. Move these files to the /pd directory if you do not want to have to export them again.
       * /pd has a capacity limit of 10GB.
 
-6. Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programmatic language. *Note: You can open and run multiple notebooks in your workspace. However, the generic, tutorial and nextflow workspace images are currently separate docker images, so there is no functionality to combine them or run nextflow in the tutorial or generic images. This may be available in the future, after further testing and development activities.*
+6. Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programming language. *Note: You can open and run multiple notebooks in your workspace; however, the generic, tutorial and nextflow workspace images are currently separate Docker images. There is no functionality to combine them or run nextflow in the Tutorial or Generic images. This may be available in the future, after further testing and development activities.*
 
       ![Start a new notebook under “Notebook” in the Launcher tab][img New Notebook]
 
@@ -44,35 +45,25 @@ Once users have access to workspaces, use this guide below to get started with a
 
       Results, including plots, tables, and graphics, can be generated in the workspace and downloaded as files.
 
-8. Do not forget to terminate your workspace once your work is finished. Unterminated workspaces continue to accrue computational costs. **Note, that Workspaces automatically shut down after 90 minutes of [idle time][Workspace timeout].**
+8. Do not forget to terminate your workspace when you are done with your session. Unterminated workspaces can continue to accrue computational costs. **Note: workspaces automatically shut down after 90 minutes of [idle time][Workspace timeout].**
 
       ![Screenshot for terminating your workspace][img Terminate workspace]
 
 Further reading: read more about how to download data files into the Workspaces [here][Download data files].
 
-## Upload, save, and download Files/Notebooks
+## Upload, Save, and Download Files/Notebooks
 
-Users can **upload** data files or Notebooks from the local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).
+You can **upload** data files or Notebooks from your local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).
 
 ![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.][img workspace upload]
 
-Then **run** in the cells, for example:
 
-`import os`
 
-`import pandas as pd`
-
-`os.chdir('/data')`
-
-`demo_df = pd.read_csv('/this_is_a_demo.txt', sep='\t')`
-
-`demo_df.head()`
-
-Users can **save** the notebook by clicking "File" - "Save as", as shown below.
+YouUsers can then **save** the notebook by clicking "File" - "Save as", as shown below.
 
 ![Save the notebook under “File” - "Save Notebook as"][img Notebook save]
 
-Users can **download** notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".
+You can then **download** notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".
 
 ![Download notebook][img download notebook]
 
@@ -84,7 +75,7 @@ The following **environments** are available in the workspaces:
 
       ![Jupyter logo][img Jupyter logo]{: style="height:100px"}
 
-The following **programmatic languages** are available in Jupyter Notebooks:
+The following **programming languages** are available in Jupyter Notebooks:
 
 * R
 * Python 3
@@ -97,13 +88,13 @@ The following **tools** are available in Jupyter Notebooks:
 
 Both Python 3 and R are available in Jupyter Notebooks.
 
-Users can expect to be able to use typical Python or R packages, such as PyPI or CRAN. For Python and R, users can start a new notebook with a tile under "Notebook", as shown below.
+Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical for data analysis are already included in the base workspace images without further installation required. For Python and R, users can start a new notebook with one of the tiles under "Notebook", as shown below.
 
 ![Find Python 3 or R when starting a new notebook under “New”.][img New Notebook]
 
 ## Automatic Workspace Shutdown
 
-**Warning:** When a BRH Workspace reaches the STRIDES Credits limit for STRIDES Credits Workspaces, or reaches the Hard Limit for STRIDES Grant Workspaces, the Workspace will be automatically terminated. Please be sure to save any work before reaching the STRIDES Credit or Hard Limit.
+**Warning:** When a HEAL Workspace reaches the STRIDES Credits limit for STRIDES Credits Workspaces, or reaches the Hard Limit for STRIDES Grant Workspaces, the Workspace will be automatically terminated. Please be sure to save any work before reaching the STRIDES Credit or Hard Limit.
 
 **Warning:** Workspaces will also automatically shut down after 90 minutes of idle time. A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
 
@@ -148,11 +139,11 @@ Users can expect to be able to use typical Python or R packages, such as PyPI or
 [Download data files]: 11-downloading_data_files.md
 [Jupyter]: https://jupyter.org/
 [Profile page]: https://brh.data-commons.org/identity
-[BRH login]: https://brh.data-commons.org/login
-[BRH Workspace]: https://brhstaging.data-commons.org/workspace
-[BRH tutorial notebooks]: https://brh.data-commons.org/resource-browser
-[BRH Platform]: https://brh.data-commons.org/
-[BRH Discovery]: https://brh.data-commons.org/discovery
+[HEALBRH login]: https://healdata.org/portal/loginhttps://brh.data-commons.org/login
+[HEALBRH Workspace]: https://healdata.org/portal/workspacehttps://brhstaging.data-commons.org/workspace
+[HEALBRH tutorial notebooks]: https://healdata.org/portal/resource-browserhttps://brh.data-commons.org/resource-browser
+[HEALBRH Platform]: https://healdata.org/landinghttps://brh.data-commons.org/
+[HEALBRH Discovery]: https://healdata.org/portal/discoveryhttps://brh.data-commons.org/discovery
 [Gen3.org]: https://gen3.org/
 [img BRH logo]: ./img/brh-logo.png
 [img Gen3 logo]: ./img/gen3blue.png
@@ -176,3 +167,5 @@ Users can expect to be able to use typical Python or R packages, such as PyPI or
 [Cox Model ACTT Data]: https://brh.data-commons.org/dashboard/Public/notebooks/ACTT1_accessclinical_notebook.html
 [Prostate Cancer Biomarker]: https://brh.data-commons.org/dashboard/Public/notebooks/TCGA_PRAD_Analysis.html
 [Drug Targets of IBD]: https://brh.data-commons.org/dashboard/Public/notebooks/IBD_notebook.html
+
+
