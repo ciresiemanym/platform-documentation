@@ -15,10 +15,10 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 2. After navigating to [https://healdata.org/portal/workspace](https://healdata.org/portal/workspace), you will discover a list of pre-configured virtual machine (VM) images, as shown below.
 
-      ![Screenshot of different workspace images](../img/HEAL_workspaces_flavors.png){: style="height:400px"}
+      ![Screenshot of different workspace images](../img/HEAL_workspaces_flavors.png)
 
       - **(Generic) Jupyter Notebook with R kernel:** Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies from the Discovery Page and want to start your custom analysis.
-      - **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials][HEAL tutorial notebooks] written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.
+      - **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials](https://healdata.org/portal/resource-browser) written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.
 
 3. Click “Launch” on any of the workspace options to spin up a copy of that VM. The status of launching the workspace is displayed after clicking on “Launch”. Note: Launching the VM may take several minutes.
 
@@ -26,15 +26,15 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 4. After launching, the home folder is displayed. One of these folders is your persistent drive ("/pd").
 
-   ![Workspace home folder, including the /pd directory](../img/HEAL_workspaces_pd.png){: style="height:400px"}
+   ![Workspace home folder, including the /pd directory](../img/HEAL_workspaces_pd.png)
 
 5. Select the /pd folder. New files or licenses should be saved in the the /pd directory if users need to access them after restarting the workspaces. Only files saved in the /pd directory will remain available after termination of a workspace session.
 
       ![Screenshot of the /pd folder](../img/HEAL_workspaces_pd_dir.png){: style="height:400px"}
 
       - **Attention:** Any personal files in the folder “data” will be lost. Personal files in the directory /pd will persist.
-      - Do not save files in the "data" or “data/brh.data-commons.org” folders.
-      - The folder “brh.data-commons.org” in the “data” folder will host the data files you have exported from the Discovery Page. Move these files to the /pd directory if you do not want to have to export them again.
+      - Do not save files in the "data" or “data/healdata.org” folders.
+      - The folder “healdata.org” in the “data” folder will host the data files you have exported from the Discovery Page. Move these files to the /pd directory if you do not want to have to export them again.
       - /pd has a capacity limit of 10GB.
 
 6. Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programming language.
@@ -57,11 +57,11 @@ Further reading: read more about how to download data files into the Workspaces 
 
 You can **upload** data files or Notebooks from your local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).
 
-![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.](../img/HEAL_workspaces_nb_upload.png){: style="height:400px"}
+![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.](../img/HEAL_workspaces_nb_upload.png)
 
 You can then **save** the notebook by clicking "File" - "Save as", as shown below.
 
-![Save the notebook under “File” - "Save Notebook as"](../img/HEAL_workspaces_nb_save.png){: style="height:400px"}
+![Save the notebook under “File” - "Save Notebook as"](../img/HEAL_workspaces_nb_save.png)
 
 You can then **download** notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".
 
@@ -73,7 +73,7 @@ The following **environments** are available in the workspaces:
 
 - Jupyter Lab
 
-![Jupyter logo](../img/workspace_jupyter_logo){: style="height:100px"}
+      ![Jupyter logo](../img/workspace_jupyter_logo){: style="height:100px"}
 
 The following **programming languages** are available in Jupyter Notebooks:
 
