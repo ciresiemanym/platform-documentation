@@ -15,7 +15,7 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 2. After navigating to [https://healdata.org/portal/workspace](https://healdata.org/portal/workspace), you will discover a list of pre-configured virtual machine (VM) images, as shown below.
 
-   ![Screenshot of different workspace images](./img/HEAL_workspace_flavors.png)
+   ![Screenshot of different workspace images](../img/HEAL_workspace_flavors.png)
 
       * **(Generic) Jupyter Notebook with R kernel:** Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies from the Discovery Page and want to start your custom analysis.
       * **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials][HEAL tutorial notebooks] written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.
