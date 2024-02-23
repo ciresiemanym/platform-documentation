@@ -15,14 +15,14 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 2. After navigating to [https://healdata.org/portal/workspace](https://healdata.org/portal/workspace), you will discover a list of pre-configured virtual machine (VM) images, as shown below.
 
-      ![Screenshot of different workspace images](./img/HEAL_workspace_flavors.png)
+   ![Screenshot of different workspace images](./img/HEAL_workspace_flavors.png)
 
       * **(Generic) Jupyter Notebook with R kernel:** Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies from the Discovery Page and want to start your custom analysis.
       * **Tutorial Notebooks:** Explore our [Jupyter Notebook tutorials][HEAL tutorial notebooks] written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.
 
 3. Click “Launch” on any of the workspace options to spin up a copy of that VM. The status of launching the workspace is displayed after clicking on “Launch”. Note: Launching the VM may take several minutes.
 
-      ![Screenshot of the launch status of the workspace](../img/workspace_launch.png)
+   ![Screenshot of the launch status of the workspace](../img/workspace_launch.png)
 
 6. After launching, the home folder is displayed. One of these folders is your persistent drive ("/pd").
 
@@ -39,7 +39,7 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 6. Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programming language. *Note: You can open and run multiple notebooks in your workspace; however, the generic, tutorial and nextflow workspace images are currently separate Docker images. There is no functionality to combine them or run nextflow in the Tutorial or Generic images. This may be available in the future, after further testing and development activities.*
 
-    ![Start a new notebook under “Notebook” in the Launcher tab](../img/HEAL_workspaces_nb_launcher.png)
+   ![Start a new notebook under “Notebook” in the Launcher tab](../img/HEAL_workspaces_nb_launcher.png)
 
 7. **Experiment away!** Code blocks are entered in cells, which can be executed individually or all at once. Code documentation and comments can also be entered in cells, and the cell type can be set to support Markdown.
 
@@ -47,7 +47,7 @@ Once you have access to workspaces, use this guide below to get started with ana
 
 8. Do not forget to terminate your workspace when you are done with your session. Unterminated workspaces can continue to accrue computational costs. **Note: workspaces automatically shut down after 90 minutes of [idle time][Workspace timeout].**
 
-      ![Screenshot for terminating your workspace](../img/HEAL_workspaces_terminate.png)
+   ![Screenshot for terminating your workspace](../img/HEAL_workspaces_terminate.png)
 
 Further reading: read more about how to download data files into the Workspaces [here](downloading_files.md).
 
@@ -55,15 +55,15 @@ Further reading: read more about how to download data files into the Workspaces 
 
 You can **upload** data files or Notebooks from your local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).
 
-      ![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.](../img/HEAL_workspaces_upload_nb.png)
+![Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner.](../img/HEAL_workspaces_nb_upload.png)
 
 You can then **save** the notebook by clicking "File" - "Save as", as shown below.
 
-<!--![Save the notebook under “File” - "Save Notebook as"][img Notebook save]-->
+![Save the notebook under “File” - "Save Notebook as"](../img/HEAL_workspaces_nb_save.png)
 
 You can then **download** notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".
 
-<!--![Download notebook][img download notebook]-->
+![Download notebook](../img/HEAL_workspaces_nb_download.png)
 
 ## Environments, Languages, and Tools
 
@@ -71,7 +71,7 @@ The following **environments** are available in the workspaces:
 
 * Jupyter Lab
 
-      ![Jupyter logo](../img/workspace_jupyter_logo){: style="height:100px"}
+  ![Jupyter logo](../img/workspace_jupyter_logo){: style="height:100px"}
 
 The following **programming languages** are available in Jupyter Notebooks:
 
@@ -80,7 +80,7 @@ The following **programming languages** are available in Jupyter Notebooks:
 
 The following **tools** are available in Jupyter Notebooks:
 
-* GitHub ([read GitHub documentation][GitHub])
+* GitHub ([read GitHub documentation](https://docs.github.com/en))
 
 ## Python 3 and R in Jupyter
 
@@ -88,7 +88,7 @@ Both Python 3 and R are available in Jupyter Notebooks.
 
 Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical for data analysis are already included in the base workspace images without further installation required. For Python and R, users can start a new notebook with one of the tiles under "Notebook", as shown below.
 
-<!-- ![Find Python 3 or R when starting a new notebook under “New”.][img New Notebook] -->
+![Find Python 3 or R when starting a new notebook under “New”.](../img/HEAL_workspaces_nb_launcher.png)
 
 ## Automatic Workspace Shutdown
 
@@ -96,7 +96,7 @@ Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical
 
 **Warning:** Workspaces will also automatically shut down after 90 minutes of idle time. A pop-up window will remind users to navigate back to the workspaces page in order to save the data.
 
-<!-- ![2' warning for shutdown for workspace][img Workspace shutdown 2'] -->
+![2' warning for shutdown for workspace](../img/workspace_shutdown_sign_2.png)
 
 <!-- Links and Images -->
 
