@@ -937,7 +937,7 @@ Workspaces are secure data analysis environments in the cloud that can access da
 </li>
 <li>
 <p>After navigating to <a href="https://healdata.org/portal/workspace">https://healdata.org/portal/workspace</a>, you will discover a list of pre-configured virtual machine (VM) images, as shown below.</p>
-<p><img alt="Screenshot of different workspace images" src="../img/HEAL_workspaces_flavors.png" /></p>
+<p><img alt="Screenshot of different workspace images" src="../../img/HEAL_workspaces_flavors.png" /></p>
 <ul>
 <li><strong>(Generic) Jupyter Notebook with R kernel:</strong> Choose this VM if you are familiar with setting up Python- or R-based Notebooks, or if you just exported one or multiple studies from the Discovery Page and want to start your custom analysis.</li>
 <li><strong>Tutorial Notebooks:</strong> Explore our <a href="https://healdata.org/portal/resource-browser">Jupyter Notebook tutorials</a> written in Python or R, which analyze data pulled from various sources on the HEAL Data Platform These are excellent resources for code to use to analyze data from HEAL, and examples that illustrate the variety of data and analyses available through HEAL.</li>
@@ -949,11 +949,11 @@ Workspaces are secure data analysis environments in the cloud that can access da
 </li>
 <li>
 <p>After launching, the home folder is displayed. One of these folders is your persistent drive ("/pd").</p>
-<p><img alt="Workspace home folder, including the /pd directory" src="../img/HEAL_workspaces_pd.png" /></p>
+<p><img alt="Workspace home folder, including the /pd directory" src="../../img/HEAL_workspaces_pd.png" /></p>
 </li>
 <li>
 <p>Select the /pd folder. New files or licenses should be saved in the the /pd directory if users need to access them after restarting the workspaces. Only files saved in the /pd directory will remain available after termination of a workspace session.</p>
-<p><img alt="Screenshot of the /pd folder" src="../img/HEAL_workspaces_pd_dir.png" style="height:400px" /></p>
+<p><img alt="Screenshot of the /pd folder" src="../../img/HEAL_workspaces_pd_dir.png" style="height:400px" /></p>
 <ul>
 <li><strong>Attention:</strong> Any personal files in the folder “data” will be lost. Personal files in the directory /pd will persist.</li>
 <li>Do not save files in the "data" or “data/healdata.org” folders.</li>
@@ -964,7 +964,7 @@ Workspaces are secure data analysis environments in the cloud that can access da
 <li>
 <p>Start a new notebook under “Notebook” in the Launcher tab. Click the tiles in the launcher and choose between Python 3 or R Studio as the base programming language.</p>
 <p><em>Note: You can open and run multiple notebooks in your workspace; however, the generic, tutorial and nextflow workspace images are currently separate Docker images. There is no functionality to combine them or run nextflow in the Tutorial or Generic images. This may be available in the future, after further testing and development activities.</em></p>
-<p><img alt="Start a new notebook under “Notebook” in the Launcher tab" src="../img/HEAL_workspaces_nb_launcher.png" /></p>
+<p><img alt="Start a new notebook under “Notebook” in the Launcher tab" src="../../img/HEAL_workspaces_nb_launcher.png" /></p>
 </li>
 <li>
 <p><strong>Experiment away!</strong> Code blocks are entered in cells, which can be executed individually or all at once. Code documentation and comments can also be entered in cells, and the cell type can be set to support Markdown.</p>
@@ -974,15 +974,15 @@ Workspaces are secure data analysis environments in the cloud that can access da
 <p>Do not forget to terminate your workspace when you are done with your session. Unterminated workspaces can continue to accrue computational costs. <strong>Note: workspaces automatically shut down after 90 minutes of <a href="#automatic-workspace-shutdown">idle time</a>.</strong></p>
 </li>
 </ol>
-<p><img alt="Screenshot for terminating your workspace" src="../img/HEAL_workspaces_terminate.png" style="height:200px" /></p>
+<p><img alt="Screenshot for terminating your workspace" src="../../img/HEAL_workspaces_terminate.png" style="height:200px" /></p>
 <p>Further reading: read more about how to download data files into the Workspaces <a href="downloading_files.md">here</a>.</p>
 <h2 id="upload-save-and-download-filesnotebooks">Upload, Save, and Download Files/Notebooks<a class="headerlink" href="#upload-save-and-download-filesnotebooks" title="Permanent link">&para;</a></h2>
 <p>You can <strong>upload</strong> data files or Notebooks from your local machine to the home directory by clicking on “Upload” in the top left corner. Access the uploaded content in the Notebook (see below).</p>
-<p><img alt="Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner." src="../img/HEAL_workspaces_nb_upload.png" /></p>
+<p><img alt="Upload data files or Notebooks to the workspace by clicking on “Upload” in the top left corner." src="../../img/HEAL_workspaces_nb_upload.png" /></p>
 <p>You can then <strong>save</strong> the notebook by clicking "File" - "Save as", as shown below.</p>
 <p><img alt="Save the notebook under “File” - &quot;Save Notebook as&quot;" src="../img/HEAL_workspaces_nb_save.png" style="height:400px" /></p>
 <p>You can then <strong>download</strong> notebooks by clicking "File" - "Download", as shown below. Download the notebook, for example, as ".ipynb".</p>
-<p><img alt="Download notebook" src="../img/HEAL_workspaces_nb_download.png" style="height:400px" /></p>
+<p><img alt="Download notebook" src="../../img/HEAL_workspaces_nb_download.png" style="height:400px" /></p>
 <h2 id="environments-languages-and-tools">Environments, Languages, and Tools<a class="headerlink" href="#environments-languages-and-tools" title="Permanent link">&para;</a></h2>
 <p>The following <strong>environments</strong> are available in the workspaces:</p>
 <ul>
@@ -1001,7 +1001,7 @@ Workspaces are secure data analysis environments in the cloud that can access da
 <h2 id="python-3-and-r-in-jupyter">Python 3 and R in Jupyter<a class="headerlink" href="#python-3-and-r-in-jupyter" title="Permanent link">&para;</a></h2>
 <p>Both Python 3 and R are available in Jupyter Notebooks.</p>
 <p>Basic Python or R packages , such as PyPI or CRAN, as well as many tools typical for data analysis are already included in the base workspace images without further installation required. For Python and R, users can start a new notebook with one of the tiles under "Notebook", as shown below.</p>
-<p><img alt="Find Python 3 or R when starting a new notebook under “New”." src="../img/HEAL_workspaces_nb_launcher.png" /></p>
+<p><img alt="Find Python 3 or R when starting a new notebook under “New”." src="../../img/HEAL_workspaces_nb_launcher.png" /></p>
 <h2 id="automatic-workspace-shutdown">Automatic Workspace Shutdown<a class="headerlink" href="#automatic-workspace-shutdown" title="Permanent link">&para;</a></h2>
 <p><strong>Warning:</strong> When a HEAL Workspace reaches the STRIDES Credits limit for STRIDES Credits Workspaces, or reaches the Hard Limit for STRIDES Grant Workspaces, the Workspace will be automatically terminated. Please be sure to save any work before reaching the STRIDES Credit or Hard Limit.</p>
 <p><strong>Warning:</strong> Workspaces will also automatically shut down after 90 minutes of idle time. A pop-up window will remind users to navigate back to the workspaces page in order to save the data.</p>
