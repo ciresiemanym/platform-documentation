@@ -125,4 +125,19 @@
          <lastmod>2024-03-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
+    <url>
+         <loc>https://heal-docs-dev.io/workspaces/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/workspaces/heal_workspace_registration/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://heal-docs-dev.io/workspaces/heal_workspaces/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
 </urlset>
